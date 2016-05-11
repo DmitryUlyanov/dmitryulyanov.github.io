@@ -106,7 +106,7 @@ It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way 
 </p>
 
 ### Notes
-- If we set the seed and try different masks, we'll see the network learned to produce a full-resolution image for each semantic region and then multiply it by mask. Not the best behavior we could expect!
+- If we set the seed and try different masks, we'll see the network learned to produce a full-resolution image for each semantic style and then multiply it by mask. Hard to say what we exactly we expected, but generator tends to strictly follow the edges between the regions.
 
 <p align="center">
 <a id="show_image">Show Image</a>
@@ -130,8 +130,8 @@ It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way 
 
 - [Artistic style](https://github.com/jcjohnson/neural-style)
 - [Texture networks](https://github.com/DmitryUlyanov/texture_nets)
-- [Optimization-based neural doodle](https://github.com/DmitryUlyanov/fast-neural-doodle)
+- [fast-neural-doodle](https://github.com/DmitryUlyanov/fast-neural-doodle)
 - [Feed-forward neural doodle](https://github.com/DmitryUlyanov/online-neural-doodle)
-- [Alex](https://twitter.com/alexjc) is working now on a fast version of his patch-based approach. Check out his [repo](https://github.com/alexjc/neural-doodle)
+- [Alex](https://twitter.com/alexjc) is working on a fast version of his patch-based approach. Check out his [repo](https://github.com/alexjc/neural-doodle).
 
 ---
