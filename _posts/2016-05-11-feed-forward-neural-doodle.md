@@ -129,9 +129,4 @@ It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way 
 - [Texture networks](https://github.com/DmitryUlyanov/texture_nets)
 - [Optimization-based neural doodle](https://github.com/DmitryUlyanov/fast-neural-doodle)
 - [Feed-forward neural doodle](https://github.com/DmitryUlyanov/online-neural-doodle)
-
-[Alex](https://twitter.com/alexjc) is working now on a fast version of his patch-based approach. He claims the following image was generated in 13 sec! Eager to see more!
-<p align="center">
-<img src="https://pbs.twimg.com/media/CiK1WgbWsAEE2Oq.jpg:large" style="width:512px;">
-</p>
-Check out his [repo](https://github.com/alexjc/neural-doodle)
+- [Alex](https://twitter.com/alexjc) is working now on a fast version of his patch-based approach. Check out his [repo](https://github.com/alexjc/neural-doodle)
