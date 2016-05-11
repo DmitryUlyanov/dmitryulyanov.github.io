@@ -106,7 +106,7 @@ It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way 
 </p>
 
 ### Notes
-- If we set the seed and try different masks, we'll see the network learned to produce a full-resolution image for each semantic style and then multiply it by mask. Hard to say what we exactly we expected, but generator tends to strictly follow the edges between the regions.
+- If we set the seed and try different masks, we'll see the network learned to produce a full-resolution image for each semantic style and then multiply it by mask. Hard to say what exactly we expected, but generator tends to strictly follow the edges between the regions.
 
 <p align="center">
 <a id="show_image">Show Image</a>
