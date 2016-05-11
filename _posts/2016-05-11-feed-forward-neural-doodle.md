@@ -101,6 +101,10 @@ We are all set up to start learning process. The input is formed by concatenatio
 
 It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way is to scale the mask to match spatial dimensions of activations $F^l$ with a standard nearest-neighbor or bilinear interpolation. In fact the deeper you go inside neural net, the less clear the border between regions become. After two `3x3` convolutions each pixel aggregates information from` 5x5` patches and now for some pixels you cannot certainly say what region they belong to. This motivates to blur the mask accordingly to receptive field of corresponding layer in VGG as we go through. Use `3x3` mean filter for mask when the data goes through convolutions and average pooling along with pooling layers.   
 
+<p align="center">
+<img src="/assets/online-neural-doodle/online_grid.png" align="center">
+</p>
+
 ### Notes
 - If we set the seed and try different masks, we'll see the network learned to produce a full-resolution image for each semantic region and then multiply it by mask. Not the best behavior we could expect!
 
@@ -129,3 +133,5 @@ It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way 
 - [Optimization-based neural doodle](https://github.com/DmitryUlyanov/fast-neural-doodle)
 - [Feed-forward neural doodle](https://github.com/DmitryUlyanov/online-neural-doodle)
 - [Alex](https://twitter.com/alexjc) is working now on a fast version of his patch-based approach. Check out his [repo](https://github.com/alexjc/neural-doodle)
+
+---
