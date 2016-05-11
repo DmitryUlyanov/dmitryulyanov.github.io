@@ -104,7 +104,7 @@ We are all set up to start learning process. The input is formed by concatenatio
 
 It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way is to scale the mask to match spatial dimensions of activations $F^l$ with a standard nearest-neighbor or bilinear interpolation. In fact the deeper you go inside neural net, the less clear the border between regions become. After two `3x3` convolutions each pixel aggregates information from` 5x5` patches and now for some pixels you cannot certainly say what region they belong to. This motivates to blur the mask accordingly to receptive field of corresponding layer in VGG as we go through. Use `3x3` mean filter for mask when the data goes through convolutions and average pooling along with pooling layers.   
 
-### Discussion
+### Notes
 - If we set the seed and try different masks, we'll see the network learned to produce a full-resolution image for each semantic region and then multiply it by mask. Not the best behavior we could expect!
 
 <p align="center">
@@ -123,7 +123,7 @@ It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way 
 
 - Some padding-related problems are very annoying and result in horizontal lines. Look at the example above.
 - The training procedure is weak in a way. Assume a huge region with a lot of variety (sky in starry night). The masks we generate can have almost zero area for this region, still we want distributions to be preserved.
-
+- It was fun.
 
 ### All the links in one place
 
