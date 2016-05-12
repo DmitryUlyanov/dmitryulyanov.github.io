@@ -10,7 +10,10 @@ Sometimes you sigh you cannot draw, aren’t you? It takes time to master the sk
 <iframe frameborder="0" src="http://likemo.net/?iframe-mode=1" width="750" height="480"></iframe>
 </p>
 
-The following text describes the way it is done. The code is available on [github](https://github.com/DmitryUlyanov/online-neural-doodle).
+The following text describes the way it is done. The code is available on [github](https://github.com/DmitryUlyanov/online-neural-doodle). The project is closely related to our ICML 2016 paper:
+
+D. Ulyanov, V. Lebedev, A. Vedaldi, and V. Lempitsky. Texture networks: Feed-forward synthesis of textures and stylized images. In International Conference on Machine Learning (ICML), 2016. 
+\[[paper](http://arxiv.org/abs/1603.03417)|[bibtex](http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovLVL16)\]
 
 # Background
 
