@@ -4,7 +4,7 @@ mathjax: true
 title: "Feed-forward neural doodle"
 author: Dmitry Ulyanov
 ---
-Sometimes you sigh you cannot draw, aren’t you? It takes time to master the skills, and you have more important things to do :) What if you could only sketch the picture like a 3-years old and everything else is done by a computer so your sketch looks like a real painting? It will certainly happen in near future. In fact several algorithms which do the thing very well were proposed recently, yet they take at least several minutes to render your masterpiece using a high-end hardware. We make a step towards making such things available for everybody and present an [online demo](http://likemo.net/) of our fast algorithm.
+Sometimes you sigh you cannot draw, aren’t you? It takes time to master the skills, and you have more important things to do :) What if you could only sketch the picture like a 3-years old and everything else is done by a computer so your sketch looks like a real painting? It will certainly happen in near future. In fact several algorithms that do the thing very well were proposed recently, yet they take at least several minutes to render your masterpiece using a high-end hardware. We make a step towards making such things available for everybody and present an [online demo](http://likemo.net/) of our fast algorithm.
 
 <p align="center">
 <iframe frameborder="0" src="http://likemo.net/?iframe-mode=1" width="750" height="480"></iframe>
