@@ -65,7 +65,7 @@ A competing approach to the original distribution matching idea of artistic styl
 
 ## Neural doodles
 
-Two month ago Alex Champandard created [neural doodles](https://github.com/alexjc/neural-doodle) on top of the path-based method for artistic style. The idea is to rerender an image manipulating its semantic maps. After that I approached neural doodles with distribution matching variant. My implementation produced nice results and turned out to be faster than Alex's version since patch manipulations are computationally expensive, which was the reason to call it ["fast-neural-doodle"]((https://github.com/DmitryUlyanov/fast-neural-doodle)).
+Two month ago Alex Champandard created [neural doodles](https://github.com/alexjc/neural-doodle) on top of the patch-based method for artistic style. The idea is to rerender an image manipulating its semantic maps. After that I approached neural doodles with distribution matching variant. My implementation produced nice results and turned out to be faster than Alex's version since patch manipulations are computationally expensive, which was the reason to call it ["fast-neural-doodle"]((https://github.com/DmitryUlyanov/fast-neural-doodle)).
 
 <img src="/assets/online-neural-doodle/grid.png">
 
@@ -87,7 +87,7 @@ $$
 L_{style}(x;y) = \sum_l \sum_r \sum_{ij} (C^{l,r}(x) G_{ij}^l(x) - C^{l,r}(y) G_{ij}^l(y)).
 $$
 
-Following the artistic style paper we use `conv1_1,conv2_1,conv3_1,conv4_1,conv5_1` layers of VGG-19 and LBFG-S optimizer. You can find the code [here](https://github.com/DmitryUlyanov/fast-neural-doodle).
+Following the artistic style paper we use `conv1_1,conv2_1,conv3_1,conv4_1,conv5_1` layers of VGG-19 and L-BFGS optimizer. You can find the code [here](https://github.com/DmitryUlyanov/fast-neural-doodle).
 
 # Online (feed-forward) neural doodles
 Finally, we have a way to make artistic style faster, we can apply it to neural doodles, but we need to think how to incorporate masks into the learning process. First we need to generate a masks dataset.
