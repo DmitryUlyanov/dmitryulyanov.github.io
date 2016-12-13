@@ -12,7 +12,7 @@ Sometimes you sigh you cannot draw, aren’t you? It takes time to master the sk
 
 The following text describes the way it is done. The code is available on [github](https://github.com/DmitryUlyanov/online-neural-doodle). The project is closely related to our ICML 2016 paper:
 
-D. Ulyanov, V. Lebedev, A. Vedaldi, and V. Lempitsky. Texture networks: Feed-forward synthesis of textures and stylized images. In International Conference on Machine Learning (ICML), 2016. 
+D. Ulyanov, V. Lebedev, A. Vedaldi, and V. Lempitsky. Texture networks: Feed-forward synthesis of textures and stylized images. In International Conference on Machine Learning (ICML), 2016.
 \[[paper](http://arxiv.org/abs/1603.03417)|[bibtex](http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovLVL16)\]
 
 # Background
@@ -113,7 +113,7 @@ It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way 
 
 <p align="center">
 <a id="show_image">Show Image</a>
-<img id="my_images" style="display:none;width:304px;height:228px;" src="/assets/online-neural-doodle/animation.gif">
+<p align="center"><img id="my_images" style="display:none;width:304px;height:228px;" src="/assets/online-neural-doodle/animation.gif"></p>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>

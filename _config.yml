@@ -1,4 +1,4 @@
-host: 0.0.0.0
+host: localhost
 port: 4000
 #
 # This file contains configuration flags to customize your site
@@ -24,7 +24,7 @@ footer-links:
   flickr:
   github: DmitryUlyanov
   instagram:
-  linkedin:
+  linkedin: dulyanov
   pinterest:
   rss: rss # just type anything here for a working RSS icon
   twitter: DmitryUlyanovML
