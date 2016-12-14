@@ -418,19 +418,19 @@ Most probably you would say that style transfer for audio is to transfer voice, 
 <tr>
 <td style="text-align: center; vertical-align: middle;">Content:</td>
 <td style="text-align: center; vertical-align: middle;"><audio controls>
-  <source src="/assets/neural-style-audio/stylization/futurama.mp3">
+  <source src="/assets/neural-style-audio/stylization/stairway2.mp3">
 </audio></td>
 </tr>
 <tr>
 <td style="text-align: center; vertical-align: middle;">Style:</td>
 <td style="text-align: center; vertical-align: middle;"><audio controls>
-  <source src="/assets/neural-style-audio/stylization/imperial.mp3">
+  <source src="/assets/neural-style-audio/stylization/nightcall.mp3">
 </audio></td>
 </tr>
 <tr>
 <td style="text-align: center; vertical-align: middle;">Synthesized:</td>
 <td style="text-align: center; vertical-align: middle;"><audio controls>
-  <source src="/assets/neural-style-audio/stylization/outputs/futurama_imperial_11_0.0100.wav.mp3">
+  <source src="/assets/neural-style-audio/stylization/outputs/stairway2_nightcall_11_0.0100.wav.mp3">
 </audio></td>
 </tr>
 </table>
