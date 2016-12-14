@@ -388,6 +388,100 @@ Most probably you would say that style transfer for audio is to transfer voice, 
 </tr>
 </table>
 
+<a href="javascript:look('div2');" title="More examples">More examples</a>
+<div id="div2" style="display: none;">
+
+<p/>
+<table style="text-align: center; vertical-align: middle;">
+<tr>
+<td style="text-align: center; vertical-align: middle;">Content:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/futurama.mp3">
+</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle;">Style:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/imperial.mp3">
+</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle;">Synthesized:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/outputs/futurama_imperial_11_0.0100.wav.mp3">
+</audio></td>
+</tr>
+</table>
+
+<p/>
+<table style="text-align: center; vertical-align: middle;">
+<tr>
+<td style="text-align: center; vertical-align: middle;">Content:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/futurama.mp3">
+</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle;">Style:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/imperial.mp3">
+</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle;">Synthesized:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/outputs/futurama_imperial_11_0.0100.wav.mp3">
+</audio></td>
+</tr>
+</table>
+
+<p/>
+
+<table style="text-align: center; vertical-align: middle;">
+<tr>
+<td style="text-align: center; vertical-align: middle;">Content:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/usa.mp3">
+</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle;">Style:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/imperial.mp3">
+</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle;">Synthesized:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/outputs/usa_imperial_11_0.0010.wav.mp3">
+</audio></td>
+</tr>
+</table>
+
+<p/>
+
+<table style="text-align: center; vertical-align: middle;">
+<tr>
+<td style="text-align: center; vertical-align: middle;">Content:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/valkyries.mp3">
+</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle;">Style:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/imperial.mp3">
+</audio></td>
+</tr>
+<tr>
+<td style="text-align: center; vertical-align: middle;">Synthesized:</td>
+<td style="text-align: center; vertical-align: middle;"><audio controls>
+  <source src="/assets/neural-style-audio/stylization/outputs/valkyries_imperial_11_0.0100.wav.mp3">
+</audio></td>
+</tr>
+</table>
+
+</div>
 </center>
 <!-- <table>
 <tr>
