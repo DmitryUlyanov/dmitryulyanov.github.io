@@ -6,6 +6,7 @@ title: "Audio texture synthesis and style transfer"
 author:
 - Dmitry Ulyanov
 - Vadim Lebedev
+excerpt_separator: <!--more-->
 ---
 
 <p class="byline">
@@ -38,6 +39,8 @@ We present an extension of [texture synthesis](https://arxiv.org/abs/1505.07376)
   </tr>
 </table>
 </center>
+
+<!--more-->
 
 <!-- <table style="border:1px solid #AAAAAA;border-radius:3px;">
   <tr>
