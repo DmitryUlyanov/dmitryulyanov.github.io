@@ -7,7 +7,7 @@ author: Dmitry Ulyanov
 Sometimes you sigh you cannot draw, aren’t you? It takes time to master the skills, and you have more important things to do :) What if you could only sketch the picture like a 3-years old and everything else is done by a computer so your sketch looks like a real painting? It will certainly happen in near future. In fact several algorithms that do the thing very well were proposed recently, yet they take at least several minutes to render your masterpiece using a high-end hardware. We make a step towards making such things available for everybody and present an [online demo](http://likemo.net/) of our fast algorithm.
 
 <p align="center">
-<iframe frameborder="0" src="http://likemo.net/?iframe-mode=1" width="750" height="480"></iframe>
+<iframe frameborder="0" src="https://likemo.net/?iframe-mode=1" width="750" height="480"></iframe>
 </p>
 
 The following text describes the way it is done. The code is available on [github](https://github.com/DmitryUlyanov/online-neural-doodle). The project is closely related to our ICML 2016 paper:
@@ -129,7 +129,7 @@ It is interesting how we define masks $R^{l,r}$ at a layer $l$. The obvious way 
 - The training procedure is weak in a way. Assume a huge region with a lot of variety (sky in starry night). The masks we generate can have almost zero area for this region, still we want distributions to be preserved.
 - It was fun.
 
-### All the links in one place
+### All links in one place
 
 - [Artistic style](https://github.com/jcjohnson/neural-style)
 - [Texture networks](https://github.com/DmitryUlyanov/texture_nets)
