@@ -15,7 +15,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 
 # Selected publications
 
-<div class="features">
+<div class="publications">
 						<article>
 							<div class="image"><img src="/assets/about/karya.jpg" alt=""></div>
 							<div class="inner">
@@ -52,12 +52,12 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 
 # Projects
 
-<div class="features">
+<div class="projects">
 						<article>
 							<div class="image"><img src="/assets/about/spectr.jpg" alt=""></div>
 							<div class="inner">
-								<p class="projectTitle">Neural texture synthesis and style transfer for audio</p>
-                <p class="projectDescription">
+								<p class="title">Neural texture synthesis and style transfer for audio</p>
+                <p class="description">
 								We present an extension of texture synthesis and style transfer method of Leon Gatys et al. for audio. Joint work with Vadim Lebedev.
 								</p>
 
@@ -70,8 +70,8 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 						<article>
 							<div class="image"><img src="/assets/about/multicore-tsne.png" alt=""></div>
 							<div class="inner">
-								<p class="projectTitle">Multicore t-SNE</p>
-								<p class="projectDescription">
+								<p class="title">Multicore t-SNE</p>
+								<p class="description">
 								A multicore modification of L. Van der Maaten's Barnes-Hut t-SNE with python and Torch CFFI-based wrappers. The code also works faster than sklearn.TSNE on 1 core.
 								</p>
 								<a href="https://github.com/DmitryUlyanov/Multicore-TSNE">[code]</a>
@@ -80,8 +80,8 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 						<article>
 							<div class="image"><img src="/assets/about/online-doodle.png" alt=""></div>
 							<div class="inner">
-								<p class="projectTitle">Online neural doodle</p>
-								<p class="projectDescription">
+								<p class="title">Online neural doodle</p>
+								<p class="description">
 								"Fast neural doodle" + "Texture Nets" = "Online neural doodle". Feed-forward generator allows real-time applications so we've built a web demo <i>likeMonet</i>.
 								</p>
 								<a href="https://dmitryulyanov.github.io/feed-forward-neural-doodle/">[blogpost]</a>
@@ -92,8 +92,8 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 						<article>
 							<div class="image"><img src="/assets/about/fast-doodle.png" alt=""></div>
 							<div class="inner">
-								<p class="projectTitle">Fast neural doodle</p>
-								<p class="projectDescription">
+								<p class="title">Fast neural doodle</p>
+								<p class="description">
 								Neural doodle using gram matrices matching as opposed to original patch-based method.
 								</p>
 								<a href="https://github.com/DmitryUlyanov/fast-neural-doodle">[code]</a>
