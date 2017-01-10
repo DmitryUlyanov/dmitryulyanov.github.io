@@ -61,7 +61,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 								We present an extension of texture synthesis and style transfer method of Leon Gatys et al. for audio. Joint work with Vadim Lebedev.
 								</p>
 
-                <a href="https://dmitryulyanov.github.io/audio-texture-synthesis-and-style-transfer/">[blogpost]</a>
+                <a href="https://dmitryulyanov.github.io/audio-texture-synthesis-and-style-transfer/">[blog post]</a>
 								<a href="https://github.com/DmitryUlyanov/neural-style-audio-tf">[code-TF]</a>
 								<a href="https://github.com/vadim-v-lebedev/audio_style_tranfer">[code-Lasagne]</a>
 								<a href="https://github.com/DmitryUlyanov/neural-style-audio-torch">[code-Torch]</a>           
@@ -84,7 +84,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 								<p class="description">
 								"Fast neural doodle" + "Texture Nets" = "Online neural doodle". Feed-forward generator allows real-time applications so we've built a web demo <i>likeMonet</i>.
 								</p>
-								<a href="https://dmitryulyanov.github.io/feed-forward-neural-doodle/">[blogpost]</a>
+								<a href="https://dmitryulyanov.github.io/feed-forward-neural-doodle/">[blog post]</a>
 								<a href="https://github.com/DmitryUlyanov/online-neural-doodle">[code]</a>
 								<a href="https://likemo.net/">[online demo]</a>
 							</div>
