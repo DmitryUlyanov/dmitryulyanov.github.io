@@ -4,7 +4,7 @@ mathjax: true
 title: "Feed-forward neural doodle"
 author: Dmitry Ulyanov
 ---
-Sometimes you sigh you cannot draw, aren’t you? It takes time to master the skills, and you have more important things to do :) What if you could only sketch the picture like a 3-years old and everything else is done by a computer so your sketch looks like a real painting? It will certainly happen in near future. In fact several algorithms that do the thing very well were proposed recently, yet they take at least several minutes to render your masterpiece using a high-end hardware. We make a step towards making such things available for everybody and present an [online demo](http://likemo.net/) of our fast algorithm.
+Sometimes you sigh you cannot draw, aren’t you? It takes time to master the skills, and you have more important things to do :) What if you could only sketch the picture like a 3-years old and everything else is done by a computer so your sketch looks like a real painting? It will certainly happen in near future. In fact several algorithms that do the thing very well were proposed recently, yet they take at least several minutes to render your masterpiece using a high-end hardware. We make a step towards making such things available for everybody and present an [online demo](https://likemo.net/) of our fast algorithm.
 
 <p align="center">
 <iframe frameborder="0" src="https://likemo.net/?iframe-mode=1" width="750" height="480"></iframe>
@@ -13,12 +13,12 @@ Sometimes you sigh you cannot draw, aren’t you? It takes time to master the sk
 The following text describes the way it is done. The code is available on [github](https://github.com/DmitryUlyanov/online-neural-doodle). The project is closely related to our ICML 2016 paper:
 
 D. Ulyanov, V. Lebedev, A. Vedaldi, and V. Lempitsky. Texture networks: Feed-forward synthesis of textures and stylized images. In International Conference on Machine Learning (ICML), 2016.
-\[[paper](http://arxiv.org/abs/1603.03417)|[bibtex](http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovLVL16)\]
+\[[paper](https://arxiv.org/abs/1603.03417)|[bibtex](http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovLVL16)\]
 
 # Background
 
 ## Artistic style
-A year ago a groundbreaking paper [[Texture Synthesis Using Convolutional Neural Networks, Gatys et. al., NIPS'15]](http://arxiv.org/abs/1505.07376) which followed by an amazing extension [[A Neural Algorithm of Artistic Style, Gatys et. al.]](http://arxiv.org/abs/1508.06576) was published. They proposed a way to generate textures and transfer style (synonym for texture) from one image onto another.
+A year ago a groundbreaking paper [[Texture Synthesis Using Convolutional Neural Networks, Gatys et. al., NIPS'15]](https://arxiv.org/abs/1505.07376) which followed by an amazing extension [[A Neural Algorithm of Artistic Style, Gatys et. al.]](https://arxiv.org/abs/1508.06576) was published. They proposed a way to generate textures and transfer style (synonym for texture) from one image onto another.
 
 <img src="/assets/online-neural-doodle/textures.png">
 
@@ -49,7 +49,7 @@ Style transfer requires one more loss called *content loss* which makes sure the
 
 ### Making artistic style faster: Texture networks
 
-In our paper [[Texture Networks: Feed-forward Synthesis of Textures and Stylized Images, Ulyanov et. al., ICML'16]](http://arxiv.org/abs/1603.03417) we describe the way to archive at least $500\times$ faster texture generation and stylization. The idea is to map a random noise $z \sim \text{uniform}(0,1)$ onto a manifold $X$, which consists of images with low style loss $L_{style}(x;y)$ ($y$ is style image). The mapping can be done by a neural network $g_{\theta}(z)$ and all we need to do is to learn its parameters! This is straightforward, just think of $L_{style}$ as of $L_2$ (MSE) loss or any other loss function, which compares instances in an object space.
+In our paper [[Texture Networks: Feed-forward Synthesis of Textures and Stylized Images, Ulyanov et. al., ICML'16]](https://arxiv.org/abs/1603.03417) we describe the way to archive at least $500\times$ faster texture generation and stylization. The idea is to map a random noise $z \sim \text{uniform}(0,1)$ onto a manifold $X$, which consists of images with low style loss $L_{style}(x;y)$ ($y$ is style image). The mapping can be done by a neural network $g_{\theta}(z)$ and all we need to do is to learn its parameters! This is straightforward, just think of $L_{style}$ as of $L_2$ (MSE) loss or any other loss function, which compares instances in an object space.
 <img src="/assets/online-neural-doodle/arch.png">
 
 To learn a network generate textures we sample a batch of tensors, filled with random numbers. The generator processes these tensors and produces a batch of images $x = g_{\theta}(z)$. The images $x$ are scored with $L_{style}(x;y)$ and gradient $\frac {\partial L_{style}(x;y)}{\partial x}$ is computed.  This gradient gets backpropagated into the network $g_{\theta}(z)$ and the parameters $\theta$ updated accordingly. The process is repeated for several thousands iterations. Now to generate a new texture sample you only need to sample $z$ and do a single forward pass with a network.
@@ -61,7 +61,7 @@ The code is available on [github](https://github.com/DmitryUlyanov/texture_nets)
 
 ### Patch-based artistic style
 
-A competing approach to the original distribution matching idea of artistic style is a patch-based approach described in the [paper by Chuan Li and Michael Wand](http://arxiv.org/abs/1601.04589). They generate an image $x$ in such a way, that every pixel at each layer $l$ of neural network has a similar one in the style image. This can yield awesome results when there is no need to preserve the distribution.
+A competing approach to the original distribution matching idea of artistic style is a patch-based approach described in the [paper by Chuan Li and Michael Wand](https://arxiv.org/abs/1601.04589). They generate an image $x$ in such a way, that every pixel at each layer $l$ of neural network has a similar one in the style image. This can yield awesome results when there is no need to preserve the distribution.
 
 ## Neural doodles
 
