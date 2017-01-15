@@ -65,7 +65,7 @@ A competing approach to the original distribution matching idea of artistic styl
 
 ## Neural doodles
 
-Two month ago Alex Champandard created [neural doodles](https://github.com/alexjc/neural-doodle) on top of the patch-based method for artistic style. The idea is to rerender an image manipulating its semantic maps. After that I approached neural doodles with distribution matching variant. My implementation produced nice results and turned out to be faster than Alex's version since patch manipulations are computationally expensive, which was the reason to call it ["fast-neural-doodle"]((https://github.com/DmitryUlyanov/fast-neural-doodle)).
+Two month ago Alex Champandard created [neural doodles](https://github.com/alexjc/neural-doodle) on top of the patch-based method for artistic style. The idea is to rerender an image manipulating its semantic maps. After that I approached neural doodles with distribution matching variant. My implementation produced nice results and turned out to be faster than Alex's version since patch manipulations are computationally expensive, which was the reason to call it ["fast-neural-doodle"](https://github.com/DmitryUlyanov/fast-neural-doodle).
 
 <img src="/assets/online-neural-doodle/grid.png">
 
