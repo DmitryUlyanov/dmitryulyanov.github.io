@@ -18,7 +18,7 @@ D. Ulyanov, V. Lebedev, A. Vedaldi, and V. Lempitsky. Texture networks: Feed-for
 # Background
 
 ## Artistic style
-A year ago a groundbreaking paper [[Texture Synthesis Using Convolutional Neural Networks, Gatys et. al., NIPS'15]](https://arxiv.org/abs/1505.07376) which followed by an amazing extension [[A Neural Algorithm of Artistic Style, Gatys et. al.]](https://arxiv.org/abs/1508.06576) was published. They proposed a way to generate textures and transfer style (synonym for texture) from one image onto another.
+A year ago a groundbreaking paper [[Texture Synthesis Using Convolutional Neural Networks, Gatys et al., NIPS'15]](https://arxiv.org/abs/1505.07376) which followed by an amazing extension [[A Neural Algorithm of Artistic Style, Gatys et al.]](https://arxiv.org/abs/1508.06576) was published. They proposed a way to generate textures and transfer style (synonym for texture) from one image onto another.
 
 <img src="/assets/online-neural-doodle/textures.png">
 
@@ -54,7 +54,7 @@ In our paper [[Texture Networks: Feed-forward Synthesis of Textures and Stylized
 
 To learn a network generate textures we sample a batch of tensors, filled with random numbers. The generator processes these tensors and produces a batch of images $x = g_{\theta}(z)$. The images $x$ are scored with $L_{style}(x;y)$ and gradient $\frac {\partial L_{style}(x;y)}{\partial x}$ is computed.  This gradient gets backpropagated into the network $g_{\theta}(z)$ and the parameters $\theta$ updated accordingly. The process is repeated for several thousands iterations. Now to generate a new texture sample you only need to sample $z$ and do a single forward pass with a network.
 
-The stylization is done in the similar way, but now we show the generator the image it needs to stylize along with the noize $z$.  
+The stylization is done in the similar way, but now we show the generator the image it needs to stylize along with the noise $z$.  
 
 
 The code is available on [github](https://github.com/DmitryUlyanov/texture_nets).
