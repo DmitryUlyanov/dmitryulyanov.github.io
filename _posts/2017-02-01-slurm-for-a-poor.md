@@ -16,4 +16,4 @@ So here it is:
 
 Just adjust the command-line, `N_GPU` and parameter loop.
 
-The most non-trivial part is to use `backend="threading"` because Queue seems to be thread-safe only with it. See [test](https://gist.github.com/DmitryUlyanov/b2040ab673c0ec9186eac9a0b336d9ea). You may also notice printing issues, they can be fixed with print locks. Find a fixed version [here](https://gist.github.com/DmitryUlyanov/a5c37f08dcf0e242a50bf390c176daae).
+The most non-trivial part is to use `backend="threading"` because Queue seems to be thread-safe only with it (see [test](https://gist.github.com/DmitryUlyanov/b2040ab673c0ec9186eac9a0b336d9ea)). You may also notice printing issues, they can be fixed with print locks. Find a fixed version [here](https://gist.github.com/DmitryUlyanov/a5c37f08dcf0e242a50bf390c176daae).
