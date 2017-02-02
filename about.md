@@ -28,7 +28,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2.pdf">[paper]</a>
 								<a href="https://github.com/DmitryUlyanov/texture_nets">[code]</a>
 								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2_sup.pdf">[supplementary]</a>
-								<a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovVL16">[bibtex]</a>   
+								<a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovVL17">[bibtex]</a>   
 
 							</div>
 						</article>
