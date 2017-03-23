@@ -21,7 +21,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 							<div class="inner">
 								<p class="title">Improved Texture Networks: Maximizing Quality and Diversity in Feed-forward Stylization and Texture Synthesis</p>
 								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
-								<p class="conf">arXiv Tech. Report</p>
+								<p class="conf">CVPR 2017</p>
 								<p class="description">
 								We introduce <i>Instance Normalization</i> for a better stylization and derive entropy loss which improves samples diversity for both texture synthesis and stylization.
 								</p>
