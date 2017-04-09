@@ -17,6 +17,18 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 
 <div class="publications">
 						<article>
+							<div class="image"><img src="/assets/about/age.png" alt=""></div>
+							<div class="inner">
+								<p class="title">Adversarial Generator-Encoder Networks</p>
+								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
+								<p class="conf">arXiv Tech. report</p>
+								<p class="description">
+								We present a new autoencoder-type architecture, that is trainable in an unsupervised mode, sustains both generation and inference, and has the quality of conditional and  unconditional samples boosted by adversarial learning.</p>
+								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/04/AGE.pdf">[paper]</a>
+								<a href="https://github.com/DmitryUlyanov/AGE">[code]</a>
+								</div>
+						</article>
+						<article>
 							<div class="image"><img src="/assets/about/karya.jpg" alt=""></div>
 							<div class="inner">
 								<p class="title">Improved Texture Networks: Maximizing Quality and Diversity in Feed-forward Stylization and Texture Synthesis</p>
@@ -56,7 +68,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 						<article>
 							<div class="image"><img src="/assets/about/spectr.jpg" alt=""></div>
 							<div class="inner">
-								<p class="title">Neural texture synthesis and style transfer for audio</p>
+								<p class="title">Neural Texture Synthesis and Style Transfer for Audio</p>
                 <p class="description">
 								We present an extension of texture synthesis and style transfer method of Leon Gatys et al. for audio. Joint work with Vadim Lebedev.
 								</p>
@@ -80,7 +92,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 						<article>
 							<div class="image"><img src="/assets/about/online-doodle.png" alt=""></div>
 							<div class="inner">
-								<p class="title">Online neural doodle</p>
+								<p class="title">Online Neural Doodle</p>
 								<p class="description">
 								"Fast neural doodle" + "Texture Nets" = "Online neural doodle". Feed-forward generator allows real-time applications so we've built a web demo <i>likeMonet</i>.
 								</p>
@@ -92,7 +104,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 						<article>
 							<div class="image"><img src="/assets/about/fast-doodle.png" alt=""></div>
 							<div class="inner">
-								<p class="title">Fast neural doodle</p>
+								<p class="title">Fast Neural Doodle</p>
 								<p class="description">
 								Neural doodle using gram matrices matching as opposed to original patch-based method.
 								</p>
