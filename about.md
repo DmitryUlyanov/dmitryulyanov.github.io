@@ -21,10 +21,10 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 							<div class="inner">
 								<p class="title">Adversarial Generator-Encoder Networks</p>
 								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
-								<p class="conf">arXiv</p>
+								<p class="conf">arXiv Tech. report</p>
 								<p class="description">
 								We present a new autoencoder-type architecture, that is trainable in an unsupervised mode, sustains both generation and inference, and has the quality of conditional and  unconditional samples boosted by adversarial learning.</p>
-								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/06/AGE.pdf">[paper]</a>
+								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/04/AGE.pdf">[paper]</a>
 								<a href="https://github.com/DmitryUlyanov/AGE">[code]</a>
 								</div>
 						</article>
