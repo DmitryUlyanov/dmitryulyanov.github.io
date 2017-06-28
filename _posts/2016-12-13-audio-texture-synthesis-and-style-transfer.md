@@ -3,9 +3,7 @@ layout: post
 mathjax: true
 plyr: false
 title: "Audio texture synthesis and style transfer"
-author:
-- Dmitry Ulyanov
-- Vadim Lebedev
+author: Dmitry Ulyanov and Vadim Lebedev
 excerpt_separator: <!--more-->
 ---
 
