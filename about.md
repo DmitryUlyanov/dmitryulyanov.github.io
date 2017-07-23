@@ -40,6 +40,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2.pdf">[paper]</a>
 								<a href="https://github.com/DmitryUlyanov/texture_nets">[code]</a>
 								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2_sup.pdf">[supplementary]</a>
+								<a href="https://drive.google.com/file/d/0B_-hq6gL70bUYWZaYV96elp3dzQ/view?usp=sharing">[poster]</a>
 								<a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovVL17">[bibtex]</a>   
 
 							</div>
@@ -56,6 +57,8 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
                 <a href="http://jmlr.org/proceedings/papers/v48/ulyanov16.pdf">[paper]</a>
 								<a href="https://github.com/DmitryUlyanov/texture_nets">[code]</a>
 								<a href="http://jmlr.org/proceedings/papers/v48/ulyanov16-supp.pdf">[supplementary]</a>
+								<a href="https://drive.google.com/file/d/0B_-hq6gL70bUdDBCUHVJWVlWWjQ/view?usp=sharing">[slides]</a>
+								<a href="https://drive.google.com/file/d/0B_-hq6gL70bURnZFcnRNemppWW8/view?usp=sharing">[poster]</a>
 								<a href="http://dblp.uni-trier.de/rec/bibtex0/conf/icml/UlyanovLVL16">[bibtex]</a>   
 							</div>
 						</article>
