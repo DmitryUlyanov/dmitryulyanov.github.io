@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /about
 ---
 
 I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision group](http://sites.skoltech.ru/compvision/). My supervisors are [Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/). I also work for [Yandex](https://en.wikipedia.org/wiki/Yandex) Research.
@@ -14,8 +14,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 <br/>
 
 # Selected publications
-
-<div class="publications">
+<div class="publications" >
 						<article>
 							<div class="image"><img src="/assets/about/age.png" alt=""></div>
 							<div class="inner">
@@ -28,9 +27,10 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 								<a href="https://github.com/DmitryUlyanov/AGE">[code]</a>
 								</div>
 						</article>
-						<article>
+						<a name="texture_nets_v2"></a>
+						<article>					
 							<div class="image"><img src="/assets/about/karya.jpg" alt=""></div>
-							<div class="inner">
+						   	<div class="inner">
 								<p class="title">Improved Texture Networks: Maximizing Quality and Diversity in Feed-forward Stylization and Texture Synthesis</p>
 								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
 								<p class="conf">CVPR 2017</p>
