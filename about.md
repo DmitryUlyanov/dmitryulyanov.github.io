@@ -77,6 +77,7 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 								</p>
 
                 <a href="https://dmitryulyanov.github.io/audio-texture-synthesis-and-style-transfer/">[blog post]</a>
+								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/09/Audio_style_transfer.pdf">[slides]</a>
 								<a href="https://github.com/DmitryUlyanov/neural-style-audio-tf">[code-TF]</a>
 								<a href="https://github.com/vadim-v-lebedev/audio_style_tranfer">[code-Lasagne]</a>
 								<a href="https://github.com/DmitryUlyanov/neural-style-audio-torch">[code-Torch]</a>           
