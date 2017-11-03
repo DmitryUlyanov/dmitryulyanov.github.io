@@ -6,7 +6,7 @@ permalink: /about
 
 I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision group](http://sites.skoltech.ru/compvision/). My supervisors are [Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/). I also work for [Yandex](https://en.wikipedia.org/wiki/Yandex) Research.
 
-Prize winner in about 10 various data science contests (see CV). I run [class](https://www.coursera.org/learn/competitive-data-science) about competitive data science on Coursera.
+Prize winner in about 10 various data science contests (see CV). I run [class](https://www.coursera.org/learn/competitive-data-science) about *competitive data science* on Coursera.
 
 <br/>
 <center>
