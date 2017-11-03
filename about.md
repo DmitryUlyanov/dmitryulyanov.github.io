@@ -115,5 +115,25 @@ I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision
 								<a href="https://github.com/DmitryUlyanov/fast-neural-doodle">[code]</a>
 							</div>
 						</article>
+						<article>
+							<div class="image"><img src="/assets/about/large-image-viewer.png" alt=""></div>
+							<div class="inner">
+								<p class="title">Large Image Viewer</p>
+								<p class="description">
+								Web-based viewer for very large images.
+								</p>
+								<a href="https://github.com/DmitryUlyanov/large-image-viewer">[code]</a>
+							</div>
+						</article>
+						<article>
+							<div class="image"><img src="/assets/about/pytorch_in_theano.png" alt=""></div>
+							<div class="inner">
+								<p class="title">Pytorch in Theano</p>
+								<p class="description">
+								Run Pytorch graphs inside any Theano graph.
+								</p>
+								<a href="https://github.com/DmitryUlyanov/pytorch-in-theano">[code]</a>
+							</div>
+						</article>
 						<!-- <article/> -->
 					</div>
