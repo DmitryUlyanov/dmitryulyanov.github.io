@@ -337,7 +337,6 @@ iframe {
   <script>
     window.addEventListener('message', function(event) {
       if(height = event.data['height']) {
-        console.log(height)
         $('iframe').css('height', height + 'px')
       }
     })
