@@ -1,0 +1,729 @@
+---
+permalink: /deep_image_prior
+---
+
+<style type="text/css">
+ * { padding: 0; margin: 0;}
+
+    .container {
+        padding: 0px;
+        margin: 0px;
+        color: #404040;
+        font-size: 11pt;
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #444;
+        /*background-color: #FFFDFA;*/
+        /*background: linear-gradient(to right, white, #eee, white);
+        background: -webkit-linear-gradient( right, white, #eee, white)*/
+        /*background-image: url("/PaintSwatches_1400x900.jpg");*/
+        /*font-family: 'textbook', arial, sans-serif;*/
+        /*margin-left: auto;
+        margin-right: auto;*/
+        /*max-width: 2000px;*/
+    }
+    body {
+        background-color: #FFFAFA !important;
+        background-color: #FAFAFA !important;
+    }
+
+
+   .section {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+
+   .title {
+      color: #000000;
+      font-family: 'Roboto Condensed', sans-serif;
+      padding-top: 10px;
+      padding-bottom: 25px;
+      font-size: 36pt;
+      line-height: 100%;
+      font-weight: 700;
+      color: #444;
+    }
+    
+    .author {
+      font-size: 13pt;
+    }
+
+    .section_title {
+      color: #000000;
+      font-family: 'Roboto Condensed', sans-serif;
+      /*padding-top: 10px;*/
+      /*padding-bottom: 10px;*/
+      font-size: 24pt;
+      line-height: 100%;
+      font-weight: 700;
+      padding-bottom: 10px;
+      color: #444;
+      /*margin-left: auto;
+        margin-right: auto;
+      /*line-height: 100%;*/
+      /*font-weight: 700;*/
+    }
+    
+  .shadow {
+      -webkit-box-shadow: 5px 5px 5px #aaa;
+      -moz-box-shadow: 5px 5px 5px #aaa;
+      box-shadow: 5px 5px 5px #aaa;
+      margin-bottom: 10px;
+  }
+
+  .aff {
+      margin-bottom: 16px;
+      /*max-width: 40px;*/
+      max-height: 30px
+  }
+
+
+
+    .img_authors {
+      position: relative;
+      max-width: 130px;
+      max-height: 130px
+    }
+
+    .img_links {
+      position: relative;
+      max-width: 70px;
+      max-height: 70px
+    }
+
+
+.text {
+    position:relative;
+    line-height:2em;
+    overflow:hidden;
+}
+.fadingEffect {
+    position:absolute;
+    top:0; bottom:0; right:0;
+    width:100%;
+    background:#FFFAFA;
+    -moz-animation: showHide 5s ease-in alternate infinite; /* Firefox */
+    -webkit-animation: showHide 5s ease-in alternate infinite; /* Safari and Chrome */
+    -ms-animation: showHide 5s ease-in alternate infinite; /* IE10 */
+    -o-animation: showHide 5s ease-in alternate infinite; /* Opera */
+    animation: showHide 5s ease-in alternate infinite;
+}
+@-webkit-keyframes showHide { /* Chrome, Safari */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+@-moz-keyframes showHide { /* FF */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+@-ms-keyframes showHide { /* IE10 */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+@-o-keyframes showHide { /* Opera */
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+@keyframes showHide {
+    0% {width:100%}
+    40% {width:0%}
+    60% {width:0%;}
+    100% {width:100%;}
+}
+
+
+#cf {
+  position:relative;
+  max-height:301px;
+  /*width:450px;*/
+
+  width:100%;
+  height:100%;
+  /*overflow:hidden; */
+  /*width:inherit;*/
+
+  /*max-height: auto;*/
+
+  /*margin:0 auto;*/
+}
+
+#cf img {
+  position:absolute;
+  
+  /*height:100%;*/
+  /*width:100%;*/
+
+  opacity: 0;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  animation-name: cfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 28s;  /* 7*4 */
+}
+
+
+@keyframes cfFadeInOut {
+  /* fade out */
+  0% {
+    opacity:0;
+  }
+  5% {
+    opacity:1;
+  }
+  /* fade in */
+  14.28% {
+    opacity:1;
+  }
+  19.28% {
+    opacity:0;
+  }
+}
+
+#cf img:nth-of-type(7) {
+  animation-delay: 24s;
+}
+#cf img:nth-of-type(6) {
+  animation-delay: 20s;
+}
+#cf img:nth-of-type(5) {
+  animation-delay: 16s;
+}
+#cf img:nth-of-type(4) {
+  animation-delay: 12s;
+}
+#cf img:nth-of-type(3) {
+  animation-delay: 8s;
+}
+#cf img:nth-of-type(2) {
+  animation-delay: 4s;
+}
+#cf img:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none !important;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+    min-width: 170px;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;             /* need for iframe height 100% to work */
+}
+
+iframe {
+  box-sizing: border-box;   /* make the border size be included in the height */
+  /*display: block;            make them block to fix white space margin */
+  width: 100%;
+}
+
+.hint {
+  color: #A00;
+  font-size: 10pt;
+  margin-bottom: 10px;
+}
+
+.img-process {
+  /*width: 100%;*/
+  margin: 5px;
+  max-height: 200px; 
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+.img-process:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.centeredd {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+</style>
+
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Deep Image Prior</title>
+      <meta property="og:image" content=""/>
+      <meta property="og:title" content="Deep image prior" />
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><!-- <link rel="stylesheet" href="../css/bootstrap-theme.min.css"> -->
+
+      <!-- Google fonts -->
+      <!-- <link href="../css/google-fonts.css" rel="stylesheet" type="text/css"> -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300italic,400italic,600italic,400,700,300,600" rel="stylesheet" type="text/css">
+
+      <!-- Photoswipe -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.css" rel="stylesheet">
+
+      <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        TeX: { equationNumbers: { autoNumber: "AMS" } },
+      });
+      </script>
+
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+  <script>
+  function resizeIframe(obj) {
+    obj.style.height = 0;
+    obj.style.height = (obj.contentWindow.document.body.scrollHeight + 5) + 'px';
+  }
+
+
+
+  
+</script>
+    <script language="JavaScript">
+
+      function resize_iframe()
+      {
+        obj = document.getElementById("myiframe")
+
+        obj.style.height = 0;
+        obj.style.height = (obj.contentWindow.document.body.scrollHeight) + 'px';
+      }
+      window.onresize=resize_iframe; 
+    </script>
+
+  </head>
+
+  <body>
+    <script src="zepto.min.js"></script>
+  <script>
+    window.addEventListener('message', function(event) {
+      if(height = event.data['height']) {
+        console.log(height)
+        $('iframe').css('height', height + 'px')
+      }
+    })
+  </script>
+  <div class="container">
+
+
+    <!-- ====================================================== -->
+    <!-- ===================== TITLE ========================== -->
+    <!-- ====================================================== -->
+    <center>
+          <div class="title">Deep Image Prior</div>
+    </center>
+   
+
+ <center>
+      <div class="row row-eq-height" >
+        <!-- <div class="col-sm-12"> -->
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="col-sm-4" style="margin-bottom: 5px">
+            <!-- <div class="col-sm-12"> -->
+              <a href="https://dmitryulyanov.github.io/about">
+                  <img src="/assets/projects/dmitry_ulyanov.jpg" class="shadow img_authors img-circle img-responsive">
+                  <div class="author"><span style="font-weight: 600">Dmitry Ulyanov</span><br>Skoltech, Yandex</div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-sm-4" style="margin-bottom: 5px">
+            <!-- <div class="col-sm-12"> -->
+              <a href="https://www.robots.ox.ac.uk/~vedaldi/">
+                  <img src="/assets/projects/andrea_vedaldi.png" class="shadow img_authors img-circle img-responsive">
+                  <div class="author"><span style="font-weight: 600">Andrea Vedaldi</span><br>Oxford University</div>
+              </a>
+            <!-- </div> -->
+          </div>
+          <div class="col-sm-4" style="margin-bottom: 5px">
+            <!-- <div class="col-sm-12"> -->
+              <a href="http://sites.skoltech.ru/compvision/members/vilem/">
+                  <img src="/assets/projects/victor_lempitsky.jpg" class="shadow img_authors img-circle img-responsive">
+                  <div class="author"><span style="font-weight: 600">Victor Lempitsky</span><br>Skoltech</div>
+              </a>
+            <!-- </div> -->
+          </div>
+
+        </div>
+      <!-- </div> -->
+    </div>
+    </center>
+
+
+  <!-- ====================================================== -->
+  <!-- ===================== TEASER ============== -->
+  <!-- ====================================================== -->
+
+    <br>
+  <center>
+    <div class="row section center row-eq-height">
+      <div class="col center col-sm-8 col-sm-offset-2">
+        <div id="cf">
+          <center>
+          <img src="/assets/deep-image-prior/teaser/cropped_01.png" class="img-responsive"/>
+          <img src="/assets/deep-image-prior/teaser/cropped_02.png" class="img-responsive"/>
+          <img src="/assets/deep-image-prior/teaser/cropped_03.png" class="img-responsive"/>
+          <img src="/assets/deep-image-prior/teaser/cropped_04.png" class="img-responsive"/>
+          <img src="/assets/deep-image-prior/teaser/cropped_05.png" class="img-responsive"/>
+          <img src="/assets/deep-image-prior/teaser/cropped_06.png" class="img-responsive"/>
+          <img src="/assets/deep-image-prior/teaser/cropped_07.png" class="img-responsive"/>
+          </center>
+        </div>
+        <span style="font-size:14px"><i>Example results on several image restoration problems. We use deep neural networks, but we never train/pretrain them using datasets. We use them as a structured image prior</i>.
+        </span>
+      </div>
+    </div>
+  </center>
+
+
+
+
+
+    <!-- ====================================================== -->
+    <!-- ===================== ABSTRACT ======================= -->
+    <!-- ====================================================== -->
+    <div class="row section">
+      <!-- <div class="col-xs-8 col-xs-offset-2 text-justify"> -->
+      <div class="section_title">Abstract</div>
+      <p> <!-- style="text-indent: 30px" -->
+        Deep convolutional networks have become a popular
+        tool for image generation and restoration. Generally, their
+        excellent performance is imputed to their ability to learn realistic
+        image priors from a large number of example images.
+        In this paper, we show that, on the contrary, the structure of
+        a generator network is sufficient to capture a great deal of
+        low-level image statistics prior to any learning. In order
+        to do so, we show that a <b>randomly-initialized neural network
+        can be used as a handcrafted prior with excellent results
+        in standard inverse problems such as denoising, superresolution,
+        and inpainting.</b> Furthermore, the same prior
+        can be used to invert deep neural representations to diagnose
+        them, and to restore images based on flash-no flash
+        input pairs. 
+      </p>
+      <p> 
+        Apart from its diverse applications, our approach highlights
+        the inductive bias captured by standard generator
+        network architectures. It also bridges the gap between
+        two very popular families of image restoration methods:
+        learning-based methods using deep convolutional networks
+        and learning-free methods based on handcrafted image priors
+        such as self-similarity.
+      </p>
+      <!-- </div> -->
+    </div>
+    
+
+
+    <!-- ====================================================== -->
+    <!-- ===================== LINKS ========================== -->
+    <!-- ====================================================== -->
+    <center>
+    <div class="row section">
+      <div class="col-sm-8 col-sm-offset-2">
+      <!-- <div class="col-sm-12 center"> -->
+        <div class="col-sm-4">
+          <!-- <div class="col-sm-12"> -->
+            <a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/11/deep_image_prior.pdf">
+                <img src="/assets/projects/pdf.svg" class="img_links img-responsive">
+                <div class="author">Paper</div>
+            </a>
+          <!-- </div> -->
+        </div>
+        <div class="col-sm-4">
+          <!-- <div class="col-sm-12"> -->
+            <a href="https://box.skoltech.ru/index.php/s/ib52BOoV58ztuPM">
+                <img src="/assets/projects/pdf.svg" class="img_links img-responsive" >
+                <div class="author">Supmat</div>
+            </a>
+          <!-- </div> -->
+        </div>
+        <div class="col-sm-4">
+          <!-- <div class="col-sm-12"> -->
+            <a href="https://github.com/DmitryUlyanov/deep-image-prior" >
+                <img src="/assets/projects/github.svg" class="img_links img-responsive">
+                <div class="author">Code</div>
+            </a>
+          <!-- </div> -->
+        </div>
+      <!-- </div> -->
+    </div>
+  </div>
+  </center>
+
+
+    <!-- ====================================================== -->
+    <!-- ===================== Main idea ======================= -->
+    <!-- ====================================================== -->
+    <div class="row section">
+      <!-- <div class="col-xs-8 col-xs-offset-2 text-justify"> -->
+      <div class="section_title">Main idea</div>
+      <p> <!-- style="text-indent: 30px" -->
+        In image restoration problems the goal is to recover original image $x$ having a corrupted image $x_0$. Such problems are often formulated as an optimization task: 
+        
+        <!-- <center>
+          <span style="width:100%; height: auto; display: block;padding: 0;margin: 0;"> -->
+            \begin{equation}\label{eq1}
+              \min_x E(x; x_0) + R(x)\,,
+            \end{equation}
+         <!--  </span>
+        </center>  -->
+
+        where $E(x; x_0)$ is a <i>data term</i> and $R(x)$ is an <i>image prior</i>. The data term $E(x; x_0)$ is usually easy to design for a wide range of problems, such as super-resolution, denoising, inpainting, while image prior $R(x)$ is a challenging one. Today's trend is to capture the prior $R(x)$ with a ConvNet by training it using large number of examples. 
+      </p>
+      <p>
+        We first notice, that for a surjective $g: \theta \mapsto x$ the following procedure in theory is equivalent to \eqref{eq1}:
+        
+        $$\min_\theta E(g(\theta); x_0) + R(g(\theta)) \,.$$
+
+        In practice $g$ dramatically changes how the image space is searched by an optimization method. Furthermore, by selecting a "good" (possibly injective) mapping $g$, we could get rid of the prior term. We define $g(\theta)$ as $f_\theta(z)$, where $f$ is a deep ConvNet with parameters $\theta$ and $z$ is a fixed input, leading to the formulation
+
+        $$\min_\theta E(f_\theta (z); x_0) \,.$$ 
+
+        Here, the network $f_\theta$ is initialized randomly and input $z$ is filled with noise and fixed. 
+      </p>
+      <p>
+        In other words, <b>instead of searching for the answer in the image space we now search for it in the space of neural network's parameters</b>. We emphasize that we never use a pretrained network or an image database. Only corrupted image $x_0$ is used in the restoration process.  
+      </p>
+      <p>
+        See <a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/11/deep_image_prior.pdf">paper</a> and <a href="https://box.skoltech.ru/index.php/s/ib52BOoV58ztuPM">supplementary material</a> for details. 
+      </p>
+
+      <!-- </div> -->
+    </div>
+
+      <!-- ====================================================== -->
+    <!-- ============== PhotoSwipe ============================ -->
+    <!-- ====================================================== -->
+    <!-- <div class="container"> -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+          <!-- Background of PhotoSwipe. 
+               It's a separate element, as animating opacity is faster than rgba(). -->
+          <div class="pswp__bg"></div>
+
+          <!-- Slides wrapper with overflow:hidden. -->
+          <div class="pswp__scroll-wrap">
+
+              <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+              <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+              <div class="pswp__container">
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+              </div>
+
+              <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+              <div class="pswp__ui pswp__ui--hidden">
+
+                  <div class="pswp__top-bar">
+
+                      <!--  Controls are self-explanatory. Order can be changed. -->
+
+                      <div class="pswp__counter"></div>
+
+                      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                      <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                      <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                      <!-- element will get class pswp__preloader- -active when preloader is running -->
+                      <div class="pswp__preloader">
+                          <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                              <div class="pswp__preloader__donut"></div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                      <div class="pswp__share-tooltip"></div> 
+                  </div>
+
+                  <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                  </button>
+
+                  <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                  </button>
+
+                  <div class="pswp__caption">
+                      <div class="pswp__caption__center"></div>
+                  </div>
+
+                </div>
+
+              </div>
+
+        </div>
+
+  
+    <!-- ====================================================== -->
+    <!-- ============== Restoration process =================== -->
+    <!-- ====================================================== -->
+    <div class="row section">
+      <div class="section_title">Visualization of restoration process
+      </div>
+        <p class="hint">
+        Click on the image below and use left and right arrows or swipe.
+        </p>
+      <br>
+      
+      <div class="row row-centered center" id="methods_table" style="margin-bottom: 15px">
+        <div class="col-sm col-centered">
+          <img class="img-responsive img-process" id='process-snail'    src="/assets/deep-image-prior/teaser/cropped_03.png"/>
+        </div>
+
+        <div class="col-sm col-centered">
+          <img class="img-responsive img-process" id='process-library' src="/assets/deep-image-prior/teaser/cropped_05.png"/>
+        </div>
+
+        <div class="col-sm col-centered">
+          <img class="img-responsive img-process" id='process-vase' src="/assets/deep-image-prior/teaser/cropped_08.png"/>
+        </div>
+
+        <div class="col-sm col-centered">
+          <img class="img-responsive img-process" id='process-zebra' src="/assets/deep-image-prior/teaser/cropped_01.png"/>
+        </div>
+
+        <div class="col-sm col-centered">
+          <img class="img-responsive img-process" id='process-F16' src="/assets/deep-image-prior/teaser/cropped_02.png"/>
+        </div>
+
+        <div class="col-sm col-centered">
+          <img class="img-responsive img-process" id='process-lena' src="/assets/deep-image-prior/teaser/cropped_04.png"/>
+        </div>
+      </div>
+      
+      <br>
+      <br>
+      <div class="section_title">Comparison with other methods</div>
+      <!-- <br> -->
+    </div>
+
+    <!-- ====================================================== -->
+    <!-- ============== Comparison ============================ -->
+    <!-- ====================================================== -->
+    
+
+    </div>
+    <iframe  id="myiframe" src="image_compare.html" scrolling="no" style="border-width: 0px;width: 100%;margin: 0;padding: 0" ></iframe>
+
+  
+    <div class="container">
+    <br>
+    <div class="row section" style="padding-bottom: 0px">
+      <div class="section_title">Methods in the comparison</div>
+      <div style="font-size: 10pt; margin-left: 35px">
+      <!-- <p> -->
+        <ul>
+      <li>
+        W. Lai, J. Huang, N. Ahuja and M. Yang, <a href="https://arxiv.org/abs/1704.03915">"Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution"</a> CVPR, 2017
+      </li>
+      <li>C. Ledig, L. Theis, F. Huszar, J. Caballero, A. Cunningham, A. Acosta, A. Aitken, A. Tejani, J. Totz, Z. Wang and W. Shi,  <a href="https://arxiv.org/abs/1609.04802">"Photo-realistic single image super-resolution using a generative adversarial network"</a> CVPR, 2017
+      </li>
+      <li>
+      J. Huang, A. Singh and N. Ahuja, <a href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Huang_Single_Image_Super-Resolution_2015_CVPR_paper.pdf">"Single Image Super-Resolution from Transformed Self-Exemplars"</a> CVPR, 2015
+      </li>
+      <li>D. Glasner, S. Bagon, and M. Irani, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.159.51&rep=rep1&type=pdf">"Super-resolution from a single image"</a> ICCV, 2009
+      </li>
+      <li>
+        V. Papyan,  Y. Romano,  J. Sulam  and  M.  Elad, <a href="https://arxiv.org/abs/1705.03239">"Convolutional  dictionary  learning  via  local  processing"</a> ICCV, 2017
+      </li>
+      <li>
+        K. Dabov, A. Foi, V. Katkovnik and K. Egiazarian, <a href="https://www.cs.tut.fi/~foi/GCF-BM3D/BM3D_TIP_2007.pdf">"Image Denoising by Sparse 3-D Transform-Domain Collaborative Filtering"</a> TIP, 2007
+      </li>
+      <li>
+      A. Buades, B. Coll and J. M. Morel, <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.374.7899&rep=rep1&type=pdf">"A non-local algorithm for image denoising"</a> CVPR, 2005
+      </li>
+      <li>
+      J. Ren, L. Xu, Q. Yan and W. Sun, <a href="https://papers.nips.cc/paper/5774-shepard-convolutional-neural-networks.pdf">"Shepard Convolutional Neural Networks"</a> NIPS, 2015
+      </li>
+       </ul>
+    </div>
+    </div>
+
+    <div class="row section">
+      <div class="section_title">Acknowledgements</div>
+      Dmitry Ulyanov and Victor Lempitsky are supported by the Ministry of Education and Science of the Russian Federation (grant 14.756.31.0001) and Andrea Vedaldi is supported by ERC 677195-IDIU. 
+      Interactive visualization is based on <a href="http://graduatestudents.ucmerced.edu/wlai24/">Jason Lai</a>'s visualization for <a href="http://vllab.ucmerced.edu/wlai24/LapSRN/">LapSRN</a>. Images for <i>Glasner et al.</i> super-resolution method are taken from <a href="https://sites.google.com/site/jbhuang0604/">Jia-Bin Huang</a>'s <a href="https://github.com/jbhuang0604/SelfExSR">SelfExSR</a> repository. 
+    </div>
+
+    <center>
+    <div class="row row-eq-height" style="margin-bottom: 30px; margin-top: 10px" >
+       
+          <div class="col-sm-4">
+              <a href="http://www.skoltech.ru/en/">
+                  <img src="https://likemo.net/static/img/skoltech.png" class="img-responsive">
+              </a>
+          </div>
+          <div class="col-sm-4">
+              <a href="http://www.robots.ox.ac.uk/index.php">
+                  <img src="https://likemo.net/static/img/yandex.png" class=" img-responsive">
+              </a>
+          </div>
+          <div class="col-sm-4">
+              <a href="https://yandex.com/company/">
+                  <img src="https://likemo.net/static/img/oxford.png" class="img-responsive">
+              </a>
+          </div>
+    </div>
+    </center>
+
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+   <!-- photoswipe -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+    <script src="img-gallery.js"></script>
+</body>
+</html>
+ 
