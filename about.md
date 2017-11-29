@@ -20,6 +20,21 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 						<article>
 							<div class="image"><img src="/assets/about/age.png" alt=""></div>
 							<div class="inner">
+								<p class="title">Deep Image Prior</p>
+								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
+								<p class="conf">arxiv 2017</p>
+								<p class="description">In this paper we show that a randomly-initialized neural network
+        can be used as a handcrafted prior with excellent results
+        in standard inverse problems such as denoising, superresolution,
+        and inpainting.</p>
+								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/11/deep_image_prior.pdf">[paper]</a>
+								<a href="https://dmitryulyanov.github.io/deep_image_prior">[project page]</a>
+								<a href="https://github.com/DmitryUlyanov/deep-image-prior">[code]</a>
+								</div>
+						</article>
+						<article>
+							<div class="image"><img src="/assets/about/age.png" alt=""></div>
+							<div class="inner">
 								<p class="title">Adversarial Generator-Encoder Networks</p>
 								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
 								<p class="conf">AAAI 2018</p>
