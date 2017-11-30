@@ -18,7 +18,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 # Selected publications
 <div class="publications" >
 						<article>
-							<div class="image"><img src="/assets/about/age.png" alt=""></div>
+							<div class="image"><img src="https://raw.githubusercontent.com/DmitryUlyanov/deep-image-prior/master/data/teaser_compiled.png" alt=""></div>
 							<div class="inner">
 								<p class="title">Deep Image Prior</p>
 								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
@@ -30,7 +30,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/11/deep_image_prior.pdf">[paper]</a>
 								<a href="https://dmitryulyanov.github.io/deep_image_prior">[project page]</a>
 								<a href="https://github.com/DmitryUlyanov/deep-image-prior">[code]</a>
-								</div>
+							</div>
 						</article>
 						<article>
 							<div class="image"><img src="/assets/about/age.png" alt=""></div>
