@@ -37,7 +37,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 							<div class="inner">
 								<p class="title">Adversarial Generator-Encoder Networks</p>
 								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
-								<p class="conf">AAAI 2018</p>
+								<p class="conf">AAAI 2018 (oral)</p>
 								<p class="description">
 								We present a new autoencoder-type architecture, that is trainable in an unsupervised mode, sustains both generation and inference, and has the quality of conditional and  unconditional samples boosted by adversarial learning.</p>
 								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/06/AGE.pdf">[paper]</a>
@@ -98,6 +98,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								<a href="https://github.com/DmitryUlyanov/neural-style-audio-tf">[code-TF]</a>
 								<a href="https://github.com/vadim-v-lebedev/audio_style_tranfer">[code-Lasagne]</a>
 								<a href="https://github.com/DmitryUlyanov/neural-style-audio-torch">[code-Torch]</a>           
+								<a href="https://www.youtube.com/watch?v=HgTcKi8-qcM">[video (rus)]</a>
 							</div>
 						</article>
 						<article>
