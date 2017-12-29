@@ -26,13 +26,13 @@ We present an extension of [texture synthesis](https://arxiv.org/abs/1505.07376)
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/DmitryUlyanov/neural-style-audio-torch">Torch</a>
+      <a href="https://github.com/DmitryUlyanov/neural-style-audio-torch" style="font-size: 12pt"><b>Torch</b></a>
     </td>
     <td>
-      <a href="https://github.com/DmitryUlyanov/neural-style-audio-tf">TensorFlow</a>
+      <a href="https://github.com/DmitryUlyanov/neural-style-audio-tf" style="font-size: 12pt"><b>TensorFlow</b></a>
     </td>
     <td>
-      <a href="https://github.com/vadim-v-lebedev/audio_style_tranfer">Lasagne</a>
+      <a href="https://github.com/vadim-v-lebedev/audio_style_tranfer" style="font-size: 12pt"><b>Lasagne</b></a>
     </td>
   </tr>
 </table>

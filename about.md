@@ -1,19 +1,28 @@
 ---
 layout: page
-title: About
 permalink: /about
 ---
-
+<h1 style="margin-bottom:0px">About</h1>
 I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision group](http://sites.skoltech.ru/compvision/). My supervisors are [Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/). I also work for [Yandex](https://en.wikipedia.org/wiki/Yandex) Research.
 
 Prize winner in about 10 various data science contests (see CV). I run [class](https://www.coursera.org/learn/competitive-data-science) about *competitive data science* on Coursera.
 
 <br/>
 <center>
-<a href="https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing"><i class="svg-icon cv"></i></a> <a href="https://www.twitter.com/{{ site.footer-links.twitter }}"><i class="svg-icon twitter"></i></a>
-<a href="https://github.com/{{ site.footer-links.github }}"><i class="svg-icon github"></i></a> <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"><i class="svg-icon linkedin"></i></a>
+	<a href="https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing">
+		<i class="svg-icon cv"></i>
+	</a>
+	<a href="https://www.twitter.com/{{ site.footer-links.twitter }}">
+		<i class="svg-icon twitter"></i>
+	</a>
+	<a href="https://github.com/{{ site.footer-links.github }}">
+		<i class="svg-icon github"></i>
+	</a>
+	<a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">
+		<i class="svg-icon linkedin"></i>
+	</a>
 </center>
-<br/>
+<!-- <br/> -->
 
 # Selected publications
 <div class="publications" >
@@ -25,19 +34,19 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								<p class="conf">arxiv 2017</p>
 								<p class="description">In this paper we show that a randomly-initialized neural network
         can be used as a handcrafted prior with excellent results
-        in standard inverse problems such as denoising, superresolution,
+        in standard inverse problems such as denoising, super-resolution,
         and inpainting.</p>
-								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/11/deep_image_prior.pdf">[paper]</a>
+								<a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/12/deep_image_prior.pdf">[paper]</a>
 								<a href="https://dmitryulyanov.github.io/deep_image_prior">[project page]</a>
 								<a href="https://github.com/DmitryUlyanov/deep-image-prior">[code]</a>
 							</div>
 						</article>
-						<article>
-							<div class="image"><img src="/assets/about/age.png" alt=""></div>
+						<article class="border">
+							<div class="image"><img src="/assets/about/age22.png" alt=""></div>
 							<div class="inner">
-								<p class="title">Adversarial Generator-Encoder Networks</p>
+								<p class="title">It Takes (Only) Two: Adversarial Generator-Encoder Networks</p>
 								<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
-								<p class="conf">AAAI 2018 (oral)</p>
+								<p class="conf1"><u>AAAI 2018</u> <b>(oral)</b></p>
 								<p class="description">
 								We present a new autoencoder-type architecture, that is trainable in an unsupervised mode, sustains both generation and inference, and has the quality of conditional and  unconditional samples boosted by adversarial learning.</p>
 								<a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/06/AGE.pdf">[paper]</a>
@@ -45,7 +54,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								</div>
 						</article>
 						<a name="texture_nets_v2"></a>
-						<article>					
+						<article class="border">					
 							<div class="image"><img src="/assets/about/karya.jpg" alt=""></div>
 						   	<div class="inner">
 								<p class="title">Improved Texture Networks: Maximizing Quality and Diversity in Feed-forward Stylization and Texture Synthesis</p>
@@ -62,7 +71,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 
 							</div>
 						</article>
-						<article>
+						<article class="border">
 							<div class="image"><img src="/assets/about/texture_nets.png" alt=""></div>
 							<div class="inner">
 								<p class="title">Texture Networks: Feed-forward Synthesis of Textures and Stylized Images</p>
@@ -101,7 +110,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								<a href="https://www.youtube.com/watch?v=HgTcKi8-qcM">[video (rus)]</a>
 							</div>
 						</article>
-						<article>
+						<article class="border">
 							<div class="image"><img src="/assets/about/multicore-tsne.png" alt=""></div>
 							<div class="inner">
 								<p class="title">Multicore t-SNE</p>
@@ -111,7 +120,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								<a href="https://github.com/DmitryUlyanov/Multicore-TSNE">[code]</a>
 							</div>
 						</article>
-						<article>
+						<article class="border">
 							<div class="image"><img src="/assets/about/online-doodle.png" alt=""></div>
 							<div class="inner">
 								<p class="title">Online Neural Doodle</p>
@@ -123,7 +132,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								<a href="https://likemo.net/">[online demo]</a>
 							</div>
 						</article>
-						<article>
+						<article class="border">
 							<div class="image"><img src="/assets/about/fast-doodle.png" alt=""></div>
 							<div class="inner">
 								<p class="title">Fast Neural Doodle</p>
@@ -133,7 +142,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								<a href="https://github.com/DmitryUlyanov/fast-neural-doodle">[code]</a>
 							</div>
 						</article>
-						<article>
+						<article class="border">
 							<div class="image"><img src="/assets/about/large-image-viewer.png" alt=""></div>
 							<div class="inner">
 								<p class="title">Large Image Viewer</p>
@@ -143,7 +152,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 								<a href="https://github.com/DmitryUlyanov/large-image-viewer">[code]</a>
 							</div>
 						</article>
-						<article>
+						<article class="border">
 							<div class="image"><img src="/assets/about/pytorch_in_theano.png" alt=""></div>
 							<div class="inner">
 								<p class="title">Pytorch in Theano</p>

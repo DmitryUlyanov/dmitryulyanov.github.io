@@ -27,7 +27,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 840px;
+  max-width: 1170px;
   padding: 0 10px;
   width: 100%;
 }
@@ -47,14 +47,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 34px;
   a {
     color: inherit;
   }
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h3 {
@@ -239,10 +239,13 @@ nav {
   }
 }
 
-/* Publications */
+  .border {
+    border-top: solid 3px #f4f4f4 !important;
+  }
 
+/* Publications */
+  
   .publications article {
-    border-top: solid 3px #f4f4f4;
     margin-bottom: 1.25em;
     padding-top: 1.25em;
   }
@@ -276,6 +279,7 @@ nav {
 
   .publications article .title {
     // text-align: left;
+    color: #800;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.2;
@@ -297,7 +301,13 @@ nav {
     margin-top: 0px;
     text-decoration: underline;
   }
-
+  .publications article .conf1 {
+    // color: green;
+    // font-style: italic;
+    font-size: 15px;
+    margin-bottom: 1em;
+    margin-top: 0px;
+  }
   .publications article .description {
     // color: green;
     // font-style: italic;
@@ -308,10 +318,11 @@ nav {
 /* Projects */
 
   .projects article {
-    border-top: solid 3px #f4f4f4;
     margin-bottom: 1.0em;
     padding-top: 1.0em;
   }
+
+
 
   .projects article:first-child {
     border-top: 0;
@@ -342,6 +353,7 @@ nav {
 
   .projects article .title {
     // text-align: left;
+    color: #900;
     font-size: 21px;
     font-weight: bold;
     line-height: 1.2;

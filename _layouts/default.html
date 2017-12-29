@@ -18,6 +18,32 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <style type="text/css">
+    body {
+        background-color: #FFFAFA !important;
+        background-color: #FAFAFA !important;
+       /* zoom: 1.04; 
+        -moz-transform: scale(1.05); 
+        -moz-transform-origin: 0 0;*/
+    }
+    .container {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11pt;
+        /*line-height: 100%;*/
+        font-style: normal;
+        font-weight: 400;
+        color: #444;
+    }
+
+
+    h1,h2,h3 {
+          font-family: 'Roboto Condensed', sans-serif;
+          line-height: 100%;
+          font-weight: 700;
+          color: #444;
+    }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300italic,400italic,600italic,400,700,300,600|Roboto:400,600" rel="stylesheet" type="text/css">
 
     {% seo %}
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -27,16 +53,16 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="avatar" /></a>
+          <a href="{{ site.baseurl }}/about" class="site-avatar"><img src="{{ site.avatar }}" alt="avatar" width="64" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <h1 class="site-name"><a href="{{ site.baseurl }}/about">{{ site.name }}</a></h1>
+            <p class="site-description" style="margin-top: 0px"><a style="color:#A00" href="{{ site.baseurl }}/">{{ site.description }}</a></p>
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/"><b>Blog</b></a>
+            <a href="{{ site.baseurl }}/about"><b>About</b></a>
           </nav>
         </header>
       </div>
