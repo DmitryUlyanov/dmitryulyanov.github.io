@@ -38,6 +38,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 		<a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/12/deep_image_prior.pdf">[paper]</a>
 		<a href="https://dmitryulyanov.github.io/deep_image_prior">[project page]</a>
 		<a href="https://github.com/DmitryUlyanov/deep-image-prior">[code]</a>
+        <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-10925">[bibtex]</a>
 	</div>
 </div>
 <div class="row publications border">
@@ -52,6 +53,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         We present a new autoencoder-type architecture, that is trainable in an unsupervised mode, sustains both generation and inference, and has the quality of conditional and  unconditional samples boosted by adversarial learning.</p>
         <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/06/AGE.pdf">[paper]</a>
         <a href="https://github.com/DmitryUlyanov/AGE">[code]</a>
+        <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovVL17a">[bibtex]</a>
     </div>
 </div>
 <a name="texture_nets_v2"></a>
@@ -70,7 +72,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <a href="https://github.com/DmitryUlyanov/texture_nets">[code]</a>
         <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2_sup.pdf">[supplementary]</a>
         <a href="https://drive.google.com/file/d/0B_-hq6gL70bUYWZaYV96elp3dzQ/view?usp=sharing">[poster]</a>
-        <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovVL17">[bibtex]</a>   
+        <a href="http://dblp.uni-trier.de/rec/bibtex1/conf/cvpr/UlyanovVL17">[bibtex]</a>   
     </div>
 </div> 
 <div class="row publications border">
