@@ -12,6 +12,13 @@
       <link rel="stylesheet" href="https://cdn.plyr.io/2.0.11/plyr.css">
     {% endif %}
     
+       <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><!-- <link rel="stylesheet" href="../css/bootstrap-theme.min.css"> -->
+
+   
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -26,7 +33,7 @@
         -moz-transform: scale(1.05); 
         -moz-transform-origin: 0 0;*/
     }
-    .container {
+    .containermy {
         font-family: 'Open Sans', sans-serif;
         font-size: 11pt;
         /*line-height: 100%;*/
@@ -45,15 +52,18 @@
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300italic,400italic,600italic,400,700,300,600|Roboto:400,600" rel="stylesheet" type="text/css">
 
+
+
+ 
     {% seo %}
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
     <div class="wrapper-masthead">
-      <div class="container">
+      <div class="containermy">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/about" class="site-avatar"><img src="{{ site.avatar }}" alt="avatar" width="64" /></a>
+          <a href="{{ site.baseurl }}/about" class="site-avatar"><img src="{{ site.avatar }}" alt="avatar"  /></a>
 
           <div class="site-info">
             <h1 class="site-name"><a href="{{ site.baseurl }}/about">{{ site.name }}</a></h1>
@@ -68,12 +78,12 @@
       </div>
     </div>
 
-    <div id="main" role="main" class="container">
+    <div id="main" role="main" class="containermy">
       {{ content }}
     </div>
 
     <div class="wrapper-footer">
-      <div class="container">
+      <div class="containermy">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>

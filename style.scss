@@ -25,7 +25,7 @@ body {
   text-align: justify;
 }
 
-.container {
+.containermy {
   margin: 0 auto;
   max-width: 1170px;
   padding: 0 10px;
@@ -240,11 +240,18 @@ nav {
 }
 
   .border {
-    border-top: solid 3px #f4f4f4 !important;
+    border-top: solid 3px #f0f0f0 !important;
   }
 
 /* Publications */
   
+  .publications {
+    margin-bottom: 2.25em;
+    padding-top: 2.25em;
+    display: flex;
+    align-items: center;
+  }
+
   .publications article {
     margin-bottom: 1.25em;
     padding-top: 1.25em;
@@ -255,12 +262,20 @@ nav {
     padding-top: 0;
   }
 
-  .publications article .image {
-    display: inline-block;
-    padding-right: 1.5em;
-    vertical-align: middle;
-    width: 23%;
+  .pub-image {
+   width:100%;
   }
+
+  .vertical-align {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex; /* add */
+    justify-content: center; /* add to align horizontal */
+    align-items: center; /* add to align vertical */
+}
 
   .publications article .image img {
     display: block;
@@ -277,42 +292,48 @@ nav {
     margin-bottom: 0;
   }
 
-  .publications article .title {
+  .publications .title {
     // text-align: left;
     color: #800;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: bold;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 0.0em;
   }
 
-  .publications article .authors {
+  .publications .authors {
     // color: green;
     font-style: italic;
     margin-bottom: 0.0em;
     margin-top: 0px;
+    font-size: 11pt;
   }
-  .publications article .conf {
+  .publications .conf {
     // color: green;
     // font-style: italic;
-    font-size: 15px;
+    font-size: 11pt;
     margin-bottom: 1em;
     margin-top: 0px;
     text-decoration: underline;
+    font-size: 11pt;
+   // color: #090;
   }
-  .publications article .conf1 {
+  .publications .conf1 {
     // color: green;
     // font-style: italic;
     font-size: 15px;
     margin-bottom: 1em;
     margin-top: 0px;
+    font-size: 11pt;
+   // color: #090;
   }
-  .publications article .description {
+  .publications .description {
     // color: green;
     // font-style: italic;
     margin-bottom: 0.6em;
     margin-top: 0px;
+    font-size: 11pt;
   }
 
 /* Projects */
@@ -322,7 +343,21 @@ nav {
     padding-top: 1.0em;
   }
 
+ .proj-img {
+    width:100%;
+ }
 
+ .projects imgcol {
+    
+    max-width:272px;
+ }
+
+  .projects {
+    margin-bottom: 1.0em;
+    padding-top: 1.0em;
+    display: flex;
+    align-items: center;
+  }
 
   .projects article:first-child {
     border-top: 0;
@@ -351,7 +386,7 @@ nav {
     margin-bottom: 0;
   }
 
-  .projects article .title {
+  .projects .title {
     // text-align: left;
     color: #900;
     font-size: 21px;
@@ -361,7 +396,7 @@ nav {
     margin-bottom: 0.7em;
   }
 
-  .projects article .description {
+  .projects .description {
     // color: green;
     // font-style: italic;
     margin-bottom: 0.7em;
