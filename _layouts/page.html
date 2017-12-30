@@ -4,8 +4,9 @@ layout: default
 
 <article class="page">
 
-  {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-
+  {% if page.does_not_need_title == false %} 
+    {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
+  {% endif %}
   <div class="entry">
     {{ content }}
   </div>

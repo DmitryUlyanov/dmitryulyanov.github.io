@@ -3,6 +3,7 @@ layout: page
 permalink: /about
 excerpt: Academic web page
 title: About
+does_not_need_title: true
 ---
 <h1 style="margin:0px">About</h1>
 I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision group](http://sites.skoltech.ru/compvision/). My supervisors are [Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/). I also work for [Yandex](https://en.wikipedia.org/wiki/Yandex) Research.
