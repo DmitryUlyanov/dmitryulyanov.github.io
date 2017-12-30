@@ -248,7 +248,7 @@ nav {
   .publications {
     margin-bottom: 2.25em;
     padding-top: 2.25em;
-    display: flex;
+ //   display: flex;
     align-items: center;
   }
 
@@ -345,18 +345,18 @@ nav {
 
  .proj-img {
     width:100%;
+    //max-width:242px;
  }
 
  .projects imgcol {
-    
     max-width:272px;
  }
 
   .projects {
     margin-bottom: 1.0em;
     padding-top: 1.0em;
-    display: flex;
-    align-items: center;
+   // display: flex;
+   // align-items: center;
   }
 
   .projects article:first-child {

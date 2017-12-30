@@ -43,7 +43,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 </div>
 <div class="row publications border">
     <div class="col col-sm-5 center">
-        <img class="img-responsive" src="/assets/about/age22.png" alt=""/>
+        <img class="img-responsive pub-image" src="/assets/about/age22.png" alt=""/>
     </div>
     <div class="col col-sm-7 center">
         <p class="title">It Takes (Only) Two: Adversarial Generator-Encoder Networks</p>
@@ -57,7 +57,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <a name="texture_nets_v2"></a>
-<div class="row publications border">
+<div class="row publications border" >
     <div class="col col-sm-5 center">
         <img class="img-responsive pub-image" src="/assets/about/karya.png" alt=""/>
     </div>
