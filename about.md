@@ -133,7 +133,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 vcenter imgcol">
+    <div class="col col-sm-3 vcenter imgcol marginbottom">
         <img class="img-responsive proj-img" src="/assets/about/online-doodle.png" alt=""/>
     </div>
     <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
@@ -147,7 +147,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 vcenter imgcol">
+    <div class="col col-sm-3 vcenter imgcol marginbottom">
         <img class="img-responsive proj-img" src="/assets/about/fast-doodle.png" alt="">
     </div>
     <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
@@ -159,7 +159,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 vcenter imgcol">
+    <div class="col col-sm-3 vcenter imgcol marginbottom">
         <img class="img-responsive proj-img" src="/assets/about/large-image-viewer.png" alt=""/>
     </div>
     <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
@@ -171,7 +171,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 vcenter imgcol">
+    <div class="col col-sm-3 vcenter imgcol marginbottom">
         <img class="img-responsive proj-img" src="/assets/about/pytorch_in_theano.png" alt=""/>
     </div>
     <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
