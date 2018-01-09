@@ -732,11 +732,17 @@ iframe {
 
     <script type="text/javascript">
        $(document).ready(function(){
-            $('#lastimage').on('load', function(){
-              document.getElementById("cf").style.height = document.getElementById("firstimage").height + 8;
-            });
             $('#firstimage').on('load', function(){
-              document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
+
+              if (document.getElementById("firstimage").height > 0) {
+               document.getElementById("cf").style.height = document.getElementById("firstimage").height + 8;
+              }
+
+            });
+            $('#lastimage').on('load', function(){
+              if (document.getElementById("lastimage").height > 0) {
+                document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
+              }
             });
           });
     </script>
