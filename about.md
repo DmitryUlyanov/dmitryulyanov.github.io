@@ -38,10 +38,12 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 		<p class="description">
 			In this paper we show that a randomly-initialized neural network can be used as a handcrafted prior with excellent results in standard inverse problems such as denoising, super-resolution, and inpainting.
 		</p>
-		<a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/12/deep_image_prior.pdf">[paper]</a>
-		<a href="https://dmitryulyanov.github.io/deep_image_prior">[project page]</a>
-		<a href="https://github.com/DmitryUlyanov/deep-image-prior">[code]</a>
-        <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-10925">[bibtex]</a>
+        <div class="links">
+    		<a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/12/deep_image_prior.pdf">Paper</a>
+    		<a href="https://dmitryulyanov.github.io/deep_image_prior">Project page</a>
+    		<a href="https://github.com/DmitryUlyanov/deep-image-prior">Code</a>
+            <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-10925">BibTeX</a>
+        </div>
 	</div>
 </div>
 <div class="row publications border">
@@ -54,9 +56,11 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <p class="conf1"><u>AAAI 2018</u> <b>(oral)</b></p>
         <p class="description">
         We present a new autoencoder-type architecture, that is trainable in an unsupervised mode, sustains both generation and inference, and has the quality of conditional and  unconditional samples boosted by adversarial learning.</p>
-        <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/06/AGE.pdf">[paper]</a>
-        <a href="https://github.com/DmitryUlyanov/AGE">[code]</a>
-        <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovVL17a">[bibtex]</a>
+        <div class="links">
+            <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/06/AGE.pdf">Paper</a>
+            <a href="https://github.com/DmitryUlyanov/AGE">Code</a>
+            <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/UlyanovVL17a">BibTeX</a>
+        </div>
     </div>
 </div>
 <a name="texture_nets_v2"></a>
@@ -71,11 +75,13 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <p class="description">
         We introduce <i>Instance Normalization</i> for a better stylization and derive entropy loss which improves samples diversity for both texture synthesis and stylization.
         </p>
-        <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2.pdf">[paper]</a>
-        <a href="https://github.com/DmitryUlyanov/texture_nets">[code]</a>
-        <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2_sup.pdf">[supplementary]</a>
-        <a href="https://drive.google.com/file/d/0B_-hq6gL70bUYWZaYV96elp3dzQ/view?usp=sharing">[poster]</a>
-        <a href="http://dblp.uni-trier.de/rec/bibtex1/conf/cvpr/UlyanovVL17">[bibtex]</a>   
+        <div class="links">
+            <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2.pdf">Paper</a>
+            <a href="https://github.com/DmitryUlyanov/texture_nets">Code</a>
+            <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/01/texture_nets_v2_sup.pdf">Supplementary</a>
+            <a href="https://drive.google.com/file/d/0B_-hq6gL70bUYWZaYV96elp3dzQ/view?usp=sharing">Poster</a>
+            <a href="http://dblp.uni-trier.de/rec/bibtex1/conf/cvpr/UlyanovVL17">BibTeX</a>   
+        </div>
     </div>
 </div> 
 <div class="row publications border">
@@ -89,12 +95,14 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
                         <p class="description">
         We speed up texture synthesis and famous neural style transfer of Gatys <i>et al.</i> by 500 times. The method was used by such stylization apps like <a href="http://prisma-ai.com/">Prisma</a> and <a href="http://vinci.camera/">Vinci</a>.
         </p>
-        <a href="http://jmlr.org/proceedings/papers/v48/ulyanov16.pdf">[paper]</a>
-        <a href="https://github.com/DmitryUlyanov/texture_nets">[code]</a>
-        <a href="http://jmlr.org/proceedings/papers/v48/ulyanov16-supp.pdf">[supplementary]</a>
-        <a href="https://drive.google.com/file/d/0B_-hq6gL70bUdDBCUHVJWVlWWjQ/view?usp=sharing">[slides]</a>
-        <a href="https://drive.google.com/file/d/0B_-hq6gL70bURnZFcnRNemppWW8/view?usp=sharing">[poster]</a>
-        <a href="http://dblp.uni-trier.de/rec/bibtex0/conf/icml/UlyanovLVL16">[bibtex]</a>
+        <div class="links">
+            <a href="http://jmlr.org/proceedings/papers/v48/ulyanov16.pdf">Paper</a>
+            <a href="https://github.com/DmitryUlyanov/texture_nets">Code</a>
+            <a href="http://jmlr.org/proceedings/papers/v48/ulyanov16-supp.pdf">Supplementary</a>
+            <a href="https://drive.google.com/file/d/0B_-hq6gL70bUdDBCUHVJWVlWWjQ/view?usp=sharing">Slides</a>
+            <a href="https://drive.google.com/file/d/0B_-hq6gL70bURnZFcnRNemppWW8/view?usp=sharing">Poster</a>
+            <a href="http://dblp.uni-trier.de/rec/bibtex0/conf/icml/UlyanovLVL16">BibTeX</a>
+        </div>
     </div> 
 </div>
 
@@ -112,12 +120,14 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <p class="description">
         We present an extension of texture synthesis and style transfer method of Leon Gatys et al. for audio. Joint work with Vadim Lebedev.
         </p>
-        <a href="https://dmitryulyanov.github.io/audio-texture-synthesis-and-style-transfer/">[blog post]</a>
-        <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/09/Audio_style_transfer.pdf">[slides]</a>
-        <a href="https://github.com/DmitryUlyanov/neural-style-audio-tf">[code-TF]</a>
-        <a href="https://github.com/vadim-v-lebedev/audio_style_tranfer">[code-Lasagne]</a>
-        <a href="https://github.com/DmitryUlyanov/neural-style-audio-torch">[code-Torch]</a>           
-        <a href="https://www.youtube.com/watch?v=HgTcKi8-qcM">[video (rus)]</a>
+        <div class="links">
+            <a href="https://dmitryulyanov.github.io/audio-texture-synthesis-and-style-transfer/">Blog post</a>
+            <a href="http://sites.skoltech.ru/app/data/uploads/sites/25/2017/09/Audio_style_transfer.pdf">Slides</a>
+            <a href="https://github.com/DmitryUlyanov/neural-style-audio-tf">Code-TF</a>
+            <a href="https://github.com/vadim-v-lebedev/audio_style_tranfer">Code-Lasagne</a>
+            <a href="https://github.com/DmitryUlyanov/neural-style-audio-torch">Code-Torch</a>
+            <a href="https://www.youtube.com/watch?v=HgTcKi8-qcM">Video (rus)</a>
+        </div>
     </div>
 </div>
 <div class="row projects border">                       
@@ -129,7 +139,9 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <p class="description">
         A multicore modification of L. Van der Maaten's Barnes-Hut t-SNE with python and Torch CFFI-based wrappers. The code also works faster than sklearn.TSNE on 1 core.
         </p>
-        <a href="https://github.com/DmitryUlyanov/Multicore-TSNE">[code]</a>
+        <div class="links">
+            <a href="https://github.com/DmitryUlyanov/Multicore-TSNE">Code</a>
+        </div>
     </div>
 </div>
 <div class="row projects border">                       
@@ -141,9 +153,11 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <p class="description">
         "Fast neural doodle" + "Texture Nets" = "Online neural doodle". Feed-forward generator allows real-time applications so we've built a web demo <i>likeMonet</i>.
         </p>
-        <a href="https://dmitryulyanov.github.io/feed-forward-neural-doodle/">[blog post]</a>
-        <a href="https://github.com/DmitryUlyanov/online-neural-doodle">[code]</a>
-        <a href="https://likemo.net/">[online demo]</a>
+        <div class="links">
+            <a href="https://dmitryulyanov.github.io/feed-forward-neural-doodle/">Project page</a>
+            <a href="https://github.com/DmitryUlyanov/online-neural-doodle">Code</a>
+            <a href="https://likemo.net/">Online demo</a>
+        </div>
     </div>
 </div>
 <div class="row projects border">                       
@@ -155,7 +169,9 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <p class="description">
         Neural doodle using gram matrices matching as opposed to original patch-based method.
         </p>
-        <a href="https://github.com/DmitryUlyanov/fast-neural-doodle">[code]</a>
+        <div class="links">
+            <a href="https://github.com/DmitryUlyanov/fast-neural-doodle">Code</a>
+        </div>
     </div>
 </div>
 <div class="row projects border">                       
@@ -167,7 +183,9 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <p class="description">
         Web-based viewer for very large images.
         </p>
-        <a href="https://github.com/DmitryUlyanov/large-image-viewer">[code]</a>
+        <div class="links">
+            <a href="https://github.com/DmitryUlyanov/large-image-viewer">Code</a>
+        </div>
     </div>
 </div>
 <div class="row projects border">                       
@@ -179,7 +197,9 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <p class="description">
         Run Pytorch graphs inside any Theano graph.
         </p>
-        <a href="https://github.com/DmitryUlyanov/pytorch-in-theano">[code]</a>
+        <div class="links">
+            <a href="https://github.com/DmitryUlyanov/pytorch-in-theano">Code</a>
+        </div>
     </div>
 </div>
 <!-- </div> -->
