@@ -160,7 +160,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 </div>
 <div class="row projects border">                       
     <div class="col col-sm-3 vcenter imgcol marginbottom">
-        <img class="img-responsive proj-img" src="/assets/about/large-image-viewer.png" alt=""/>
+        <img class="img-responsive proj-img" src="/assets/about/large-image-viewer.jpg" alt=""/>
     </div>
     <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Large Image Viewer</p>
