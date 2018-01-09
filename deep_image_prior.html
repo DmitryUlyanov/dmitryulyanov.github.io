@@ -731,28 +731,36 @@ iframe {
 
 
     <script type="text/javascript">
+
+      function change_height_cf(el) {
+        if (el.height > 0) {
+               document.getElementById("cf").style.height = el.height + 8;
+        };
+      };
+      
+
        $(document).ready(function(){
             $('#firstimage').on('load', function(){
-
-              if (document.getElementById("firstimage").height > 0) {
-               document.getElementById("cf").style.height = document.getElementById("firstimage").height + 8;
-              }
+               console.log(2);
+                change_height_cf(document.getElementById("firstimage"));
             });
 
             if ($('#firstimage')[0].complete) {
-              $('#firstimage').load();
-            }
+              console.log(3);
+              change_height_cf(document.getElementById("firstimage"));
+            };
 
             $('#lastimage').on('load', function(){
-              if (document.getElementById("lastimage").height > 0) {
-                document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
-              }
+              console.log(2);
+              change_height_cf(document.getElementById("lastimage"));
             });
             if ($('#lastimage')[0].complete) {
-              $('#lastimage').load();
-            }
+              console.log(3);
+              change_height_cf(document.getElementById("lastimage"));
+            };
 
           });
+      
     </script>
     
 
