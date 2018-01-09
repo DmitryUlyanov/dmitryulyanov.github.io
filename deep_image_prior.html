@@ -316,6 +316,7 @@ iframe {
 
 
 
+
   
 </script>
     <script language="JavaScript">
@@ -326,8 +327,12 @@ iframe {
 
         obj.style.height = 0;
         obj.style.height = (obj.contentWindow.document.body.scrollHeight) + 'px';
+        
+        document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
       }
       window.onresize=resize_iframe; 
+      
+
     </script>
 
   </head>
@@ -339,7 +344,12 @@ iframe {
       if(height = event.data['height']) {
         $('iframe').css('height', height + 'px')
       }
-    })
+    });
+    
+
+    // var resizeEvent = new Event('resize');
+    // window.dispatchEvent(resizeEvent);
+    
   </script>
   <div class="container">
 
@@ -397,13 +407,13 @@ iframe {
       <div class="col center col-sm-8 col-sm-offset-2">
         <div id="cf">
           <center>
-          <img src="/assets/deep-image-prior/teaser/cropped_01.png" class="img-responsive"/>
+          <img src="/assets/deep-image-prior/teaser/cropped_01.png" class="img-responsive" id="firstimage"/>
           <img src="/assets/deep-image-prior/teaser/cropped_02.png" class="img-responsive"/>
           <img src="/assets/deep-image-prior/teaser/cropped_03.png" class="img-responsive"/>
           <img src="/assets/deep-image-prior/teaser/cropped_04.png" class="img-responsive"/>
           <img src="/assets/deep-image-prior/teaser/cropped_05.png" class="img-responsive"/>
           <img src="/assets/deep-image-prior/teaser/cropped_06.png" class="img-responsive"/>
-          <img src="/assets/deep-image-prior/teaser/cropped_07.png" class="img-responsive"/>
+          <img src="/assets/deep-image-prior/teaser/cropped_07.png" class="img-responsive" id="lastimage"/>
           </center>
         </div>
         <span style="font-size:14px"><i>Example results on several image restoration problems. We use deep neural networks, but we never train/pretrain them using datasets. We use them as a structured image prior</i>.
@@ -456,10 +466,10 @@ iframe {
     <!-- ===================== LINKS ========================== -->
     <!-- ====================================================== -->
     <center>
-    <div class="row section">
+    <div class="row section" style="margin-bottom: -12px">
       <div class="col-sm-8 col-sm-offset-2">
       <!-- <div class="col-sm-12 center"> -->
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="margin-bottom: 12px">
           <!-- <div class="col-sm-12"> -->
             <a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/12/deep_image_prior.pdf">
                 <img src="/assets/projects/pdf.svg" class="img_links img-responsive">
@@ -467,7 +477,7 @@ iframe {
             </a>
           <!-- </div> -->
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="margin-bottom: 12px">
           <!-- <div class="col-sm-12"> -->
             <a href="https://box.skoltech.ru/index.php/s/ib52BOoV58ztuPM">
                 <img src="/assets/projects/pdf.svg" class="img_links img-responsive" >
@@ -475,7 +485,7 @@ iframe {
             </a>
           <!-- </div> -->
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" style="margin-bottom: 12px">
           <!-- <div class="col-sm-12"> -->
             <a href="https://github.com/DmitryUlyanov/deep-image-prior" >
                 <img src="/assets/projects/github.svg" class="img_links img-responsive">
@@ -691,19 +701,19 @@ iframe {
     </div>
 
     <center>
-    <div class="row row-eq-height" style="margin-bottom: 30px; margin-top: 10px" >
+    <div class="row row-eq-height" style="margin-bottom: 18px; margin-top: 10px" >
        
-          <div class="col-sm-4">
+          <div class="col-sm-4" style="margin-bottom: 12px">
               <a href="http://www.skoltech.ru/en/">
                   <img src="https://likemo.net/static/img/skoltech.png" class="img-responsive">
               </a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" style="margin-bottom: 12px">
               <a href="https://yandex.com/company/">
                   <img src="https://likemo.net/static/img/yandex.png" class=" img-responsive">
               </a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4" style="margin-bottom: 12px">
               <a href="http://www.ox.ac.uk/">
                   <img src="https://likemo.net/static/img/oxford.png" class="img-responsive">
               </a>
@@ -724,6 +734,9 @@ iframe {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
     <script src="img-gallery.js"></script>
     <!-- Google Analytics -->
+<!--     <script type="text/javascript">
+      document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
+    </script> -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -765,6 +778,18 @@ iframe {
       })(document, window, "yandex_metrika_callbacks");
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/41551219" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      <script type="text/javascript">
+       $(document).ready(function(){
+            $('#lastimage').on('load', function(){
+              console.log("2");
+              document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
+            });
+            $('#firstimage').on('load', function(){
+              console.log("2");
+              document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
+            });
+          });
+    </script>
 </body>
 </html>
  
