@@ -250,6 +250,7 @@ nav {
     padding-top: 2.25em;
  //   display: flex;
     align-items: center;
+    text-align: center;
   }
 
   .publications article {
@@ -292,6 +293,23 @@ nav {
     margin-bottom: 0;
   }
 
+  @media (max-width: 768px) {
+
+  [class*="marginbottom"] {
+      margin-bottom: 15px;
+  }
+}
+
+    @media (min-width: 768px) {
+
+  [class*="vcenter"] {
+      display: inline-block;
+     vertical-align: middle;
+     float: none;
+  }
+}
+
+
   .publications .title {
     // text-align: left;
     color: #800;
@@ -299,7 +317,7 @@ nav {
     font-weight: bold;
     line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 0.0em;
+    margin-bottom: 0.1em;
   }
 
   .publications .authors {
@@ -356,7 +374,8 @@ nav {
     margin-bottom: 1.0em;
     padding-top: 1.0em;
    // display: flex;
-   // align-items: center;
+   align-items: center;
+   text-align: center;
   }
 
   .projects article:first-child {
@@ -464,6 +483,7 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start

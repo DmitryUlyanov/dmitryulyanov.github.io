@@ -28,10 +28,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 # Selected publications
 <!-- <> -->
 <div class="row publications">
-    <div class="col col-sm-5 center">
+    <div class="col-sm-5 vcenter marginbottom">
     	<img class="img-responsive pub-image" src="https://raw.githubusercontent.com/DmitryUlyanov/deep-image-prior/master/data/teaser_compiled.png" alt=""/>
     </div>
-    <div class="col col-sm-7 center">
+    <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
 		<p class="title">Deep Image Prior</p>
 		<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
 		<p class="conf">arxiv 2017</p>
@@ -45,10 +45,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 	</div>
 </div>
 <div class="row publications border">
-    <div class="col col-sm-5 center">
+    <div class="col col-sm-5 vcenter marginbottom">
         <img class="img-responsive pub-image" src="/assets/about/age22.png" alt=""/>
     </div>
-    <div class="col col-sm-7 center">
+    <div class="col col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">It Takes (Only) Two: Adversarial Generator-Encoder Networks</p>
         <p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
         <p class="conf1"><u>AAAI 2018</u> <b>(oral)</b></p>
@@ -61,10 +61,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 </div>
 <a name="texture_nets_v2"></a>
 <div class="row publications border" >
-    <div class="col col-sm-5 center">
+    <div class="col col-sm-5 vcenter marginbottom">
         <img class="img-responsive pub-image" src="/assets/about/karya.png" alt=""/>
     </div>
-    <div class="col col-sm-7 center">
+    <div class="col col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;" >
         <p class="title">Improved Texture Networks: Maximizing Quality and Diversity in Feed-forward Stylization and Texture Synthesis</p>
         <p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
         <p class="conf">CVPR 2017</p>
@@ -79,10 +79,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div> 
 <div class="row publications border">
-    <div class="col col-sm-5 center">
+    <div class="col col-sm-5 vcenter marginbottom">
         <img class="img-responsive pub-image" src="/assets/about/texture_nets_img.png" alt=""/>
     </div>
-    <div class="col col-sm-7 center">
+    <div class="col col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Texture Networks: Feed-forward Synthesis of Textures and Stylized Images</p>
         <p class="authors">Dmitry Ulyanov, Vadim Lebedev, Andrea Vedaldi, Victor Lempitsky</p>
         <p class="conf">ICML 2016</p>
@@ -101,12 +101,13 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 
 <br/>
 # Projects
-<!-- asda -->
+<!-- < -->
+<!-- <div id="projects"> -->
 <div class="row projects">                       
-    <div class="col col-sm-3 center imgcol">
+    <div class="col col-sm-3 vcenter imgcol marginbottom">
         <img class="img-responsive proj-img" src="/assets/about/spectr.jpg" alt=""/>
     </div>
-    <div class="col col-sm-9 center">
+    <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Neural Texture Synthesis and Style Transfer for Audio</p>
         <p class="description">
         We present an extension of texture synthesis and style transfer method of Leon Gatys et al. for audio. Joint work with Vadim Lebedev.
@@ -120,10 +121,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 center imgcol">
+    <div class="col col-sm-3 vcenter imgcol marginbottom">
         <img class="img-responsive proj-img" src="/assets/about/multicore-tsne.png" alt=""/>
     </div>
-    <div class="col col-sm-9 center">
+    <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Multicore t-SNE</p>
         <p class="description">
         A multicore modification of L. Van der Maaten's Barnes-Hut t-SNE with python and Torch CFFI-based wrappers. The code also works faster than sklearn.TSNE on 1 core.
@@ -132,10 +133,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 center imgcol">
+    <div class="col col-sm-3 vcenter imgcol">
         <img class="img-responsive proj-img" src="/assets/about/online-doodle.png" alt=""/>
     </div>
-    <div class="col col-sm-9 center">
+    <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Online Neural Doodle</p>
         <p class="description">
         "Fast neural doodle" + "Texture Nets" = "Online neural doodle". Feed-forward generator allows real-time applications so we've built a web demo <i>likeMonet</i>.
@@ -146,10 +147,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 center imgcol">
+    <div class="col col-sm-3 vcenter imgcol">
         <img class="img-responsive proj-img" src="/assets/about/fast-doodle.png" alt="">
     </div>
-    <div class="col col-sm-9 center">
+    <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Fast Neural Doodle</p>
         <p class="description">
         Neural doodle using gram matrices matching as opposed to original patch-based method.
@@ -158,10 +159,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 center imgcol">
+    <div class="col col-sm-3 vcenter imgcol">
         <img class="img-responsive proj-img" src="/assets/about/large-image-viewer.png" alt=""/>
     </div>
-    <div class="col col-sm-9 center">
+    <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Large Image Viewer</p>
         <p class="description">
         Web-based viewer for very large images.
@@ -170,10 +171,10 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
     </div>
 </div>
 <div class="row projects border">                       
-    <div class="col col-sm-3 center imgcol">
+    <div class="col col-sm-3 vcenter imgcol">
         <img class="img-responsive proj-img" src="/assets/about/pytorch_in_theano.png" alt=""/>
     </div>
-    <div class="col col-sm-9 center">
+    <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Pytorch in Theano</p>
         <p class="description">
         Run Pytorch graphs inside any Theano graph.
@@ -181,3 +182,5 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
         <a href="https://github.com/DmitryUlyanov/pytorch-in-theano">[code]</a>
     </div>
 </div>
+<!-- </div> -->
+
