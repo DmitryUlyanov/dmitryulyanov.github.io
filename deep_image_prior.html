@@ -363,10 +363,10 @@ iframe {
    
 
  <center>
-      <div class="row row-eq-height" >
+      <div class="row row-eq-height" style="margin-bottom: -10px">
         <!-- <div class="col-sm-12"> -->
         <div class="col-sm-8 col-sm-offset-2">
-          <div class="col-sm-4" style="margin-bottom: 5px">
+          <div class="col-sm-4" style="margin-bottom: 10px">
             <!-- <div class="col-sm-12"> -->
               <a href="https://dmitryulyanov.github.io/about">
                   <img src="/assets/projects/dmitry_ulyanov.jpg" class="shadow img_authors img-circle img-responsive">
@@ -374,7 +374,7 @@ iframe {
               </a>
             <!-- </div> -->
           </div>
-          <div class="col-sm-4" style="margin-bottom: 5px">
+          <div class="col-sm-4" style="margin-bottom: 10px">
             <!-- <div class="col-sm-12"> -->
               <a href="https://www.robots.ox.ac.uk/~vedaldi/">
                   <img src="/assets/projects/andrea_vedaldi.png" class="shadow img_authors img-circle img-responsive">
@@ -382,7 +382,7 @@ iframe {
               </a>
             <!-- </div> -->
           </div>
-          <div class="col-sm-4" style="margin-bottom: 5px">
+          <div class="col-sm-4" style="margin-bottom: 10px">
             <!-- <div class="col-sm-12"> -->
               <a href="http://sites.skoltech.ru/compvision/members/vilem/">
                   <img src="/assets/projects/victor_lempitsky.jpg" class="shadow img_authors img-circle img-responsive">
@@ -729,9 +729,25 @@ iframe {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+
+    <script type="text/javascript">
+       $(document).ready(function(){
+            $('#lastimage').on('load', function(){
+              document.getElementById("cf").style.height = document.getElementById("firstimage").height + 8;
+            });
+            $('#firstimage').on('load', function(){
+              document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
+            });
+          });
+    </script>
+    
+
    <!-- photoswipe -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+
+
+
     <script src="img-gallery.js"></script>
     <!-- Google Analytics -->
 <!--     <script type="text/javascript">
@@ -778,18 +794,7 @@ iframe {
       })(document, window, "yandex_metrika_callbacks");
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/41551219" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-      <script type="text/javascript">
-       $(document).ready(function(){
-            $('#lastimage').on('load', function(){
-              console.log("2");
-              document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
-            });
-            $('#firstimage').on('load', function(){
-              console.log("2");
-              document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
-            });
-          });
-    </script>
+
 </body>
 </html>
  
