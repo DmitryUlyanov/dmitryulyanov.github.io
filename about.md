@@ -5,27 +5,29 @@ excerpt: Academic web page
 title: About
 does_not_need_title: true
 ---
-<h1 style="margin:0px">About</h1>
-I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision group](http://sites.skoltech.ru/compvision/). My supervisors are [Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/). I also work for [Yandex](https://en.wikipedia.org/wiki/Yandex) Research.
+<h1 style="margin:0px; font-size: 36px">About</h1>
+- I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision group](http://sites.skoltech.ru/compvision/). My supervisors are [Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/). I also work for [Yandex](https://en.wikipedia.org/wiki/Yandex) Research.
 
-Prize winner in about 10 various data science contests (see CV). I run [class](https://www.coursera.org/learn/competitive-data-science) about *competitive data science* on Coursera.
+- Prize winner in about 10 various data science contests (see [CV](https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing)). I run [class](https://www.coursera.org/learn/competitive-data-science) about *competitive data science* on Coursera.
 
 <br/>
+<div class="scaleIcons">
 <center>
-    <a href="https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing">
+    <a class="hovernounderline" href="https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing">
         <i class="svg-icon cv"></i>
     </a>
-    <a href="https://www.twitter.com/{{ site.footer-links.twitter }}">
+    <a class="hovernounderline" href="https://www.twitter.com/{{ site.footer-links.twitter }}">
         <i class="svg-icon twitter"></i>
     </a>
-    <a href="https://github.com/{{ site.footer-links.github }}">
+    <a class="hovernounderline" href="https://github.com/{{ site.footer-links.github }}">
         <i class="svg-icon github"></i>
     </a>
-    <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">
+    <a class="hovernounderline" href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">
         <i class="svg-icon linkedin"></i>
     </a>
 </center>
-# Selected publications
+</div>
+<h1 style="font-size: 36px">Selected publications</h1>
 <!-- <> -->
 <div class="row publications">
     <div class="col-sm-5 vcenter marginbottom">
@@ -108,7 +110,7 @@ Prize winner in about 10 various data science contests (see CV). I run [class](h
 
 
 <br/>
-# Projects
+<h1 style="font-size: 36px">Projects</h1>
 <!-- < -->
 <!-- <div id="projects"> -->
 <div class="row projects">                       
