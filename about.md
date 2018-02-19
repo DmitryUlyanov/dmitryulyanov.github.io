@@ -36,7 +36,7 @@ does_not_need_title: true
     <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
 		<p class="title">Deep Image Prior</p>
 		<p class="authors">Dmitry Ulyanov, Andrea Vedaldi, Victor Lempitsky</p>
-		<p class="conf">arxiv 2017</p>
+		<p class="conf">CVPR 2018</p>
 		<p class="description">
 			In this paper we show that a randomly-initialized neural network can be used as a handcrafted prior with excellent results in standard inverse problems such as denoising, super-resolution, and inpainting.
 		</p>
