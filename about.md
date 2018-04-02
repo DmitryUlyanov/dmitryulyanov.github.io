@@ -41,7 +41,7 @@ does_not_need_title: true
 			In this paper we show that a randomly-initialized neural network can be used as a handcrafted prior with excellent results in standard inverse problems such as denoising, super-resolution, and inpainting.
 		</p>
         <div class="links">
-    		<a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/12/deep_image_prior.pdf">Paper</a>
+    		<a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2018/04/deep_image_prior.pdf">Paper</a>
     		<a href="https://dmitryulyanov.github.io/deep_image_prior">Project page</a>
     		<a href="https://github.com/DmitryUlyanov/deep-image-prior">Code</a>
             <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-10925">BibTeX</a>
