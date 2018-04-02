@@ -39,7 +39,7 @@ document.getElementById('process-library').onclick = function () { openPhotoSwip
 document.getElementById('process-snail').onclick = function () { openPhotoSwipe("snail", 3000); };
 document.getElementById('process-zebra').onclick = function () { openPhotoSwipe("zebra", 2000); };
 document.getElementById('process-F16').onclick = function () { openPhotoSwipe("F16", 2000); };
-document.getElementById('process-lena').onclick = function () { openPhotoSwipe("lena", 3000); };
+document.getElementById('process-kate').onclick = function () { openPhotoSwipe("kate", 6000); };
 
 
  })
