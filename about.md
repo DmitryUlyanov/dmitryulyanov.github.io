@@ -31,7 +31,7 @@ does_not_need_title: true
 <!-- <> -->
 <div class="row publications">
     <div class="col-sm-5 vcenter marginbottom">
-    	<img class="img-responsive pub-image" src="https://raw.githubusercontent.com/DmitryUlyanov/deep-image-prior/master/data/teaser_compiled.png" alt=""/>
+    	<img class="img-responsive pub-image" src="https://raw.githubusercontent.com/DmitryUlyanov/deep-image-prior/master/data/teaser_compiled.jpg" alt=""/>
     </div>
     <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
 		<p class="title">Deep Image Prior</p>
