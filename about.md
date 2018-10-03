@@ -31,6 +31,26 @@ does_not_need_title: true
 <!-- <> -->
 <div class="row publications">
     <div class="col-sm-5 vcenter marginbottom">
+        <img class="img-responsive pub-image" src="/assets/about/perceptual_gan.png" alt=""/>
+    </div>
+    <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
+        <p class="title">Image Manipulation with Perceptual Discriminators</p>
+        <p class="authors">Diana Sungatullina, Egor Zakharov, Dmitry Ulyanov, Victor Lempitsky</p>
+        <p class="conf">ECCV 2018</p>
+        <p class="description">
+            Perceptual losses and losses based on adversarial discriminators are the two main classes of learning objectives behind these advances. In this work, we show how
+            these two ideas can be combined: we use adversarial learning on top of perceptual features and improve SOtA in image translation.  
+        </p>
+        <div class="links">
+            <a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Diana_Sungatullina_Image_Manipulation_with_ECCV_2018_paper.pdf">Paper</a>
+            <a href="https://egorzakharov.github.io/perceptual_gan" style="font-weight: bold;">Project page</a>
+            <a href="https://github.com/egorzakharov/PerceptualGAN">Code</a>
+            <a href="https://box.skoltech.ru/index.php/s/J0pdkyYgxpMItWQ">Poster</a>
+        </div>
+    </div>
+</div>
+<div class="row publications">
+    <div class="col-sm-5 vcenter marginbottom">
     	<img class="img-responsive pub-image" src="https://raw.githubusercontent.com/DmitryUlyanov/deep-image-prior/master/data/teaser_compiled.jpg" alt=""/>
     </div>
     <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
@@ -204,6 +224,20 @@ does_not_need_title: true
         </p>
         <div class="links">
             <a href="https://github.com/DmitryUlyanov/pytorch-in-theano">Code</a>
+        </div>
+    </div>
+</div>
+<div class="row projects border">                       
+    <div class="col col-sm-3 vcenter imgcol marginbottom">
+        <img class="img-responsive proj-img" src="/assets/about/pytorch_in_theano.png" alt=""/>
+    </div>
+    <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
+        <p class="title">TeX publishing util</p>
+        <p class="description">
+        A utility, that prepares a latex project for packaging and publication. It removes redudndand files, comments, flattens file structure.
+        </p>
+        <div class="links">
+            <a href="https://github.com/DmitryUlyanov/tex-publishing-util">Code</a>
         </div>
     </div>
 </div>
