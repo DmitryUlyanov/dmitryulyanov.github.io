@@ -229,12 +229,12 @@ does_not_need_title: true
 </div>
 <div class="row projects border">                       
     <div class="col col-sm-3 vcenter imgcol marginbottom">
-        <img class="img-responsive proj-img" src="/assets/about/pytorch_in_theano.png" alt=""/>
+        <img class="img-responsive proj-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/TeX_logo.svg/1028px-TeX_logo.svg.png" alt=""/>
     </div>
     <div class="col col-sm-9 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">TeX publishing util</p>
         <p class="description">
-        A utility, that prepares a latex project for packaging and publication. It removes redudndand files, comments, flattens file structure.
+        A utility, that prepares a latex project for packaging and publication. It removes redundant files, comments, flattens file structure.
         </p>
         <div class="links">
             <a href="https://github.com/DmitryUlyanov/tex-publishing-util">Code</a>
