@@ -64,6 +64,8 @@ does_not_need_title: true
     		<a href="https://sites.skoltech.ru/app/data/uploads/sites/25/2018/04/deep_image_prior.pdf">Paper</a>
     		<a href="/deep_image_prior" style="font-weight: bold;">Project page</a>
     		<a href="https://github.com/DmitryUlyanov/deep-image-prior">Code</a>
+            <a href="https://box.skoltech.ru/index.php/s/INaUzvTWLak3h7Q">Paper (journal ver.)</a>
+            <a href="https://www.youtube.com/watch?v=-g1NsTuP1_I">Video</a>
             <a href="https://drive.google.com/file/d/1fA5l1wWB0s17CIIgaXe9Gydxxgs5n98i/view?usp=sharing">Slides</a>
             <a href="https://drive.google.com/file/d/1dnpOnmeZF5qg5E-Bi4yMWOZDM_qmYyJA/view?usp=sharing">Poster</a>
             <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-10925">BibTeX</a>
