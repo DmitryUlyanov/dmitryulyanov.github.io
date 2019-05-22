@@ -43,6 +43,7 @@ does_not_need_title: true
         <div class="links">
             <a href="https://arxiv.org/abs/1905.08776">Paper</a>
             <a href="https://saic-violet.github.io/texturedavatar/" style="font-weight: bold;">Project page</a>
+            <a href="https://www.youtube.com/watch?v=3rrnUX8wWZ8" style="font-weight: bold;">Demo video</a>
         </div>
     </div>
 </div>
