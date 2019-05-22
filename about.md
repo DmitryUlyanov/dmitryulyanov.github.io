@@ -31,6 +31,23 @@ does_not_need_title: true
 <!-- <> -->
 <div class="row publications">
     <div class="col-sm-5 vcenter marginbottom">
+        <img class="img-responsive pub-image" src="/assets/about/avatars.jpg" alt=""/>
+    </div>
+    <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
+        <p class="title">Textured Neural Avatars</p>
+        <p class="authors">A Shysheya, E Zakharov, R Bashirov, I Pasechnik, E Burkov, D Ulyanov, Y Malkov, K Iskakov, A Aliev, A Ivakhnenko, A Vakhitov, V Lempitsky</p>
+        <p class="conf">CVPR 2019</p>
+        <p class="description">
+            We present a system for learning full-body neural avatars, i.e. deep networks that produce full-body renderings of a person for varying body pose and camera position. Our system estimates an explicit two-dimensional texture map of the model surface and uses a fully-convolutional network to directly map the configuration of body feature points w.r.t. the camera to the 2D texture coordinates of individual pixels in the image frame.
+        </p>
+        <div class="links">
+            <a href="https://arxiv.org/abs/1905.08776">Paper</a>
+            <a href="https://saic-violet.github.io/texturedavatar/" style="font-weight: bold;">Project page</a>
+        </div>
+    </div>
+</div>
+<div class="row publications">
+    <div class="col-sm-5 vcenter marginbottom">
         <img class="img-responsive pub-image" src="/assets/about/perceptual_gan.png" alt=""/>
     </div>
     <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
