@@ -47,7 +47,7 @@ does_not_need_title: true
         </div>
     </div>
 </div>
-<div class="row publications">
+<div class="row publications border">
     <div class="col-sm-5 vcenter marginbottom">
         <img class="img-responsive pub-image" src="/assets/about/perceptual_gan.png" alt=""/>
     </div>
