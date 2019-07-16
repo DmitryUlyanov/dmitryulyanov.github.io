@@ -1,0 +1,306 @@
+---
+permalink: /image_compare_point_based.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Comparison</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="/style_clean.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300italic,400italic,600italic,400,700,300,600" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container main-body" id='maindiv'>
+
+
+    <div class="row center">
+
+         <div class="input-field col col-centered mmw">
+        <select id="tasks" onchange="change_task()" style="visibility: hidden;">
+          <!-- FILLED WITH JS -->
+        </select>
+        <!-- <label class="select_label">Problem</label> -->
+      </div>
+
+      <div class="input-field col col-centered mmw">
+        <select id="datasets" onchange="change_dataset()">
+          <!-- FILLED WITH JS -->
+        </select>
+        <!-- <label class="select_label">Dataset</label> -->
+      </div>
+
+      <div class="input-field col col-centered mmw">
+        <select id="variants" onchange="change_variant()">
+            <!-- FILLED WITH JS -->
+        </select>
+        <!-- <label class="select_label">Scale/Sigma</label> -->
+      </div>
+
+
+
+      <div class="input-field col col-centered mmw">
+        <select id="imgs" onchange="change_variant()">
+          <!-- FILLED WITH JS -->
+        </select>
+        <label class="select_label">Select Image</label>
+      </div>      
+    </div>
+
+      
+    <div class="row row-centered center" id="methods_table" style="margin-bottom: 15px">
+    </div>
+
+
+    <div class="row center">
+      <div class="center">
+        <img class="img-responsive1 demo-img shadow" name="demo-img" id="img-bicubic" src="" onresize="sendHeight()" onerror="this.src='/assets/deep-image-prior/NA.jpg'">
+        <div class="subtitle" id="img-caption"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--  Scripts-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="zepto.min.js"></script>
+  <script>
+        var task_dict = { 
+                          TheOnlyTask: {
+                                datasets: {
+                                    TheOnlyDataset: ['2448'],
+                                },
+                                methods: {
+                                    
+                                    TheOnlyMethod: [
+                                      {id:"1 color",       text:"1. Pointcloud"},
+                                      {id:"2 ours",  text:"2. Ours"},
+                                      {id:"3 pca",   text:"3. Discriptors"},
+                                      {id:"4 pix2pix",  text:"4. Pix2Pix"},
+                                      {id:"5 texture",  text:"5. Texture"}
+                                      ],
+                                  
+                                },
+                                variants: ['TheOnlyMethod']
+                              }                         
+                        };
+
+      function fill_methods_select(methods) {
+        $("[id='methods_table']").empty();
+        var mt = document.getElementById("methods_table");
+        for (i = 0; i < methods.length; i++) { 
+            var td=document.createElement("div");
+            td.id=methods[i].id;
+            td.innerHTML = methods[i].text;
+            td.className="col-centered method-tag col";
+
+            mt.appendChild(td);
+
+            $("[id='" + methods[i].id + "']").attr("onmouseover","change_method(this.id)");
+        }
+      }
+
+      function fill_variants_select(variants) {
+        $("[id='variants']").empty();
+        var sel = document.getElementById("variants");
+        for (i = 0; i < variants.length; i++) { 
+            var opt=document.createElement("option");
+            opt.value = variants[i];
+            opt.innerHTML = variants[i];
+        
+            sel.appendChild(opt);
+        }
+        
+        sel.selectedIndex = 0;
+
+        return variants[0];
+      }
+
+      function fill_imgs_select(imgs) {
+        $("[id='imgs']").empty();
+        var sel = document.getElementById("imgs");
+        for (i = 0; i < imgs.length; i++) { 
+            var opt=document.createElement("option");
+            opt.value = imgs[i];
+            opt.innerHTML = imgs[i];
+            
+            sel.appendChild(opt);
+        }
+        sel.selectedIndex = 0;
+
+        return imgs[0];
+      }
+
+      function fill_datasets_select(datasets) {
+        $("[id='datasets']").empty();
+        var sel = document.getElementById("datasets");
+        for (i = 0; i < datasets.length; i++) { 
+            var opt=document.createElement("option");
+            opt.value = datasets[i];
+            opt.innerHTML = datasets[i];
+            
+            sel.appendChild(opt);
+        }
+        sel.selectedIndex = 0;
+
+        return datasets[0];
+      }
+
+      function fill_tasks_select(tasks) {
+        $("[id='tasks']").empty();
+        var sel = document.getElementById("tasks");
+        for (i = 0; i < tasks.length; i++) { 
+            var opt=document.createElement("option");
+            opt.value = tasks[i];
+            opt.innerHTML = tasks[i];
+            
+            sel.appendChild(opt);
+        }
+        sel.selectedIndex = 0;
+
+        return tasks[0];
+      }
+
+      function change_task() {
+        var x = document.getElementById("tasks");
+        var i = x.selectedIndex;
+        var selected_task = x.options[i].value;
+
+        fill_datasets_select(Object.keys(task_dict[selected_task].datasets));
+        change_dataset();
+      }
+
+      function change_dataset() {
+        var x = document.getElementById("tasks");
+        var i = x.selectedIndex;
+        var selected_task = x.options[i].value;
+
+        var x = document.getElementById("datasets");
+        var i = x.selectedIndex;
+        var selected_dataset = x.options[i].value;
+
+        var selected_variant = fill_variants_select(task_dict[selected_task].variants);
+        var selected_img     = fill_imgs_select(task_dict[selected_task].datasets[selected_dataset]);
+        var selected_method = fill_methods_select(task_dict[selected_task].methods[selected_variant]);
+
+        change_method('1 GT');
+        $('select').material_select();
+        $('.tooltipped').tooltip({delay: 0});
+        // sendHeight();
+        // MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      }
+
+
+    var idx_to_key = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '+', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', ';', '\'', '\\', 'z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', '/']
+
+    function change_variant() {
+        var x = document.getElementById("tasks");
+        var i = x.selectedIndex;
+        var selected_task = x.options[i].value;
+
+        x = document.getElementById("datasets");
+        i = x.selectedIndex;
+        var selected_dataset = x.options[i].value;
+
+        x = document.getElementById("variants");
+        i = x.selectedIndex;
+        var selected_variant = x.options[i].value;
+
+
+        // var selected_img     = fill_imgs_select(task_dict[selected_task].datasets[selected_dataset]);
+        var selected_method = fill_methods_select(task_dict[selected_task].methods[selected_variant]);
+
+
+
+        var img = document.getElementsByName("demo-img")[0];
+        var method = img.id.split("-")[1];
+        change_method(method);
+        $('.tooltipped').tooltip({delay: 0});
+    }
+
+    function change_method(method_) {
+        var s = method_.split(' ');
+        var method_idx = s[0];
+        var method = s[1];
+
+        var x = document.getElementById("tasks");
+        var i = x.selectedIndex;
+        var task = x.options[i].value;
+
+        x = document.getElementById("datasets");
+        i = x.selectedIndex;
+        var dataset = x.options[i].value;
+
+        x = document.getElementById("variants");
+        i = x.selectedIndex;
+        var variant = x.options[i].value;
+
+        x = document.getElementById("imgs");
+        i = x.selectedIndex;
+        var name = x.options[i].value;
+
+        var img = document.getElementsByName("demo-img")[0];
+        var filename = name + "_" + method;
+        img.src = "/assets/neural-point-pased-rendering/" + filename + ".png";
+        img.id = "img-" + method_;
+
+        // Caption
+        var caption = document.getElementById("img-caption");
+        
+
+        var method_div = document.getElementById(method_);
+        caption.innerHTML =  method_div.innerHTML;
+  
+    }
+
+
+    document.onkeypress = function checkKeycode(event) {
+        var keycode, keyChar;
+
+        if(!event) var event = window.event;
+        if (event.keyCode) keycode = event.keyCode;
+        else if(event.which) keycode = event.which;
+        key = String.fromCharCode(keycode);
+
+        key_idx = idx_to_key.indexOf(key);
+
+        table = document.getElementById("methods_table");
+        if (key_idx < table.children.length) {
+          var method = table.children[key_idx].id;
+          change_method(method);
+        }
+
+
+
+
+    }
+    sendHeight = function(){
+      height = $('div').height();
+      window.parent.postMessage({"height": height}, "*");
+    }
+    $(document).ready(function(){
+        $('.materialboxed').materialbox();
+
+        var selected_task    = fill_tasks_select(Object.keys(task_dict));
+        change_task(selected_task);
+        
+        $('select').material_select();
+      
+        $('img').on('load', function(){
+          sendHeight();
+        });
+    }); // end of document ready
+
+
+  </script>
+  <!-- Latest compiled and minified JavaScript -->
+  
+
+  </body>
+</html>
