@@ -11,7 +11,7 @@ permalink: /image_compare_point_based.html
 
   <!-- CSS  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <link href="/style_clean.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/point_based_style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300italic,400italic,600italic,400,700,300,600" rel="stylesheet" type="text/css">
 </head>
 
@@ -21,21 +21,21 @@ permalink: /image_compare_point_based.html
 
     <div class="row center">
 
-         <div class="input-field col col-centered mmw">
+      <div class="input-field col col-centered mmw" style="visibility: hidden;">
         <select id="tasks" onchange="change_task()" style="visibility: hidden;">
           <!-- FILLED WITH JS -->
         </select>
         <!-- <label class="select_label">Problem</label> -->
       </div>
 
-      <div class="input-field col col-centered mmw">
-        <select id="datasets" onchange="change_dataset()">
+      <div class="input-field col col-centered mmw" style="visibility: hidden;" >
+        <select id="datasets" onchange="change_dataset()" style="visibility: hidden;">
           <!-- FILLED WITH JS -->
         </select>
         <!-- <label class="select_label">Dataset</label> -->
       </div>
 
-      <div class="input-field col col-centered mmw">
+      <div class="input-field col col-centered mmw" style="visibility: hidden;">
         <select id="variants" onchange="change_variant()">
             <!-- FILLED WITH JS -->
         </select>
@@ -44,15 +44,25 @@ permalink: /image_compare_point_based.html
 
 
 
+<!--       <div class="input-field col col-centered mmw" style="visibility: hidden;">
+        <select id="imgs" onchange="change_variant()">
+        </select>
+        <label class="select_label">Select Image</label>
+      </div>      
+ -->
+   </div>
+
+
+    <div class="row center">
       <div class="input-field col col-centered mmw">
         <select id="imgs" onchange="change_variant()">
           <!-- FILLED WITH JS -->
         </select>
         <label class="select_label">Select Image</label>
-      </div>      
+      </div>  
     </div>
-
       
+
     <div class="row row-centered center" id="methods_table" style="margin-bottom: 15px">
     </div>
 
@@ -255,7 +265,7 @@ permalink: /image_compare_point_based.html
         
 
         var method_div = document.getElementById(method_);
-        caption.innerHTML =  method_div.innerHTML;
+        // caption.innerHTML =  method_div.innerHTML;
   
     }
 
