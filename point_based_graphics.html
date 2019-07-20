@@ -484,8 +484,17 @@ challenging for standard mesh-based modeling.
     <div class="row section">
       <!-- <div class="col-xs-8 col-xs-offset-2 text-justify"> -->
       <div class="section_title">Main idea</div>
-      
-
+      <p>
+        Having a set of RGB(D) images we first reconstruct a rough pointcloud of the scene using the classic Structure From Motion (SfM) and Multiview Stereo (MVS) algorithms. 
+      </p>
+With every point in the pointcloud we associate a small learnable N-dimensional descriptor (similar to 3-dimensional color descriptor, that every point already has). We then project the descriptors to virtual cameras, estimated by SfM (similarly to how the colored pointcloud is projected to a camera) and feed those projections to a ConvNet, which is then learned to render the scene from the corresponding view. We learn the ConvNet jointly with the descriptors to minimize the discrepancy between the predicted rendering and actual image captured by a real camera. 
+</p>
+<p>
+At train time we learn the mentioned ConvNet on multiple scenes to make it universal. At test time, for an unseen set of RGB(D) images we repeat the training pipeline, except we fix the ConvNet and only optimize the descriptors of the points. Having both descriptors and the network trained we can render the scene from an arbitrary standpoint.
+</p>
+<p>
+Our method successfully generalizes to novel views and enables a very photo-realistic real-time rendering of complex scenes.
+</p>
       <!-- </div> -->
     </div>
 
