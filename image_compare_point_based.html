@@ -84,16 +84,17 @@ permalink: /image_compare_point_based.html
         var task_dict = { 
                           TheOnlyTask: {
                                 datasets: {
-                                    TheOnlyDataset: ['2448'],
+                                    TheOnlyDataset: ['2448', '0000', '0556', '0093', '0600'],
                                 },
                                 methods: {
                                     
                                     TheOnlyMethod: [
-                                      {id:"1 color",       text:"1. Pointcloud"},
+                                      {id:"1 color",       text:"1. Colored points"},
                                       {id:"2 ours",  text:"2. Ours"},
                                       {id:"3 pca",   text:"3. Discriptors"},
                                       {id:"4 pix2pix",  text:"4. Pix2Pix"},
-                                      {id:"5 texture",  text:"5. Texture"}
+                                      {id:"5 texture",  text:"5. Texture"},
+                                      {id:"6 nearest_gt", text:"6. Nearest from train"},
                                       ],
                                   
                                 },
@@ -199,7 +200,7 @@ permalink: /image_compare_point_based.html
         var selected_img     = fill_imgs_select(task_dict[selected_task].datasets[selected_dataset]);
         var selected_method = fill_methods_select(task_dict[selected_task].methods[selected_variant]);
 
-        change_method('1 GT');
+        change_method('1 color');
         $('select').material_select();
         $('.tooltipped').tooltip({delay: 0});
         // sendHeight();
@@ -257,7 +258,13 @@ permalink: /image_compare_point_based.html
 
         var img = document.getElementsByName("demo-img")[0];
         var filename = name + "_" + method;
-        img.src = "/assets/neural-point-pased-rendering/" + filename + ".png";
+
+        if (method == 'nearest_gt') {
+           img.src = "/assets/neural-point-pased-rendering/" + filename + ".jpg"; 
+        }
+        else {
+           img.src = "/assets/neural-point-pased-rendering/" + filename + ".png";
+        }
         img.id = "img-" + method_;
 
         // Caption
