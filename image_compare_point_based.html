@@ -81,10 +81,17 @@ permalink: /image_compare_point_based.html
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="zepto.min.js"></script>
   <script>
+        // var names = {
+        //   '2448': "Scannet",
+        //   '0000': "Human",
+        //   0556: "Plant",
+        //   0093: "Shoe",
+        //   0600: "Scannet 2",
+        // }
         var task_dict = { 
                           TheOnlyTask: {
                                 datasets: {
-                                    TheOnlyDataset: ['2448', '0000', '0556', '0093', '0600'],
+                                    TheOnlyDataset: ['Shoe', 'Plant', 'Human', 'Scannet',  'Scannet_2'],
                                 },
                                 methods: {
                                     
@@ -94,7 +101,7 @@ permalink: /image_compare_point_based.html
                                       {id:"3 pix2pix",  text:"3. Pix2Pix"},
                                       {id:"4 ours",  text:"4. Ours"},
                                       {id:"5 nearest_gt", text:"5. Nearest from train"},
-                                      {id:"6 pca",   text:"6. Discriptors"},
+                                      {id:"6 pca",   text:"6. Descriptors (pca)"},
                                       ],
                                   
                                 },
@@ -272,7 +279,7 @@ permalink: /image_compare_point_based.html
         
 
         var method_div = document.getElementById(method_);
-        // caption.innerHTML =  method_div.innerHTML;
+        caption.innerHTML =  method_div.innerHTML;
   
     }
 
