@@ -31,6 +31,24 @@ does_not_need_title: true
 <!-- <> -->
 <div class="row publications">
     <div class="col-sm-5 vcenter marginbottom">
+        <img class="img-responsive pub-image" src="/assets/about/point_based.jpg" alt=""/>
+    </div>
+    <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
+        <p class="title">Neural Point-Based Graphics</p>
+        <p class="authors">Kara-Ali Aliev, Dmitry Ulyanov, Victor Lempitsky</p>
+        <p class="conf">arXiv 2019</p>
+        <p class="description">
+            We propose a neural-based photo-realistic rendering pipeline that builds upon pointclouds. To render an image we project descriptors of the pointcloud to camera and apply a ConvNet to get an RGB image. Descriptors and the ConvNet are leared on real videos thus the rendering is realistic.  
+        </p>
+        <div class="links">
+            <a href="https://arxiv.org/pdf/1906.08240.pdf">Paper</a>
+            <a href="https://dmitryulyanov.github.io/neural_point_based_graphics" style="font-weight: bold;">Project page</a>
+            <a href="https://www.youtube.com/watch?v=7s3BYGok7wU" style="font-weight: bold;">Demo video</a>
+        </div>
+    </div>
+</div>
+<div class="row publications border">
+    <div class="col-sm-5 vcenter marginbottom">
         <img class="img-responsive pub-image" src="/assets/about/avatars.jpg" alt=""/>
     </div>
     <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
