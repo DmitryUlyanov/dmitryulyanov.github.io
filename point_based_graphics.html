@@ -3,356 +3,456 @@ permalink: /neural_point_based_graphics
 ---
 
 <style type="text/css">
- * { padding: 0; margin: 0;}
+  * {
+    padding: 0;
+    margin: 0;
+  }
 
-    .container {
-        padding: 0px;
-        margin: 0px;
-        color: #404040;
-        font-size: 11pt;
-        font-family: 'Open Sans', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        color: #444;
-        /*background-color: #FFFDFA;*/
-        /*background: linear-gradient(to right, white, #eee, white);
+  .container {
+    padding: 0px;
+    margin: 0px;
+    color: #404040;
+    font-size: 11pt;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #444;
+    /*background-color: #FFFDFA;*/
+    /*background: linear-gradient(to right, white, #eee, white);
         background: -webkit-linear-gradient( right, white, #eee, white)*/
-        /*background-image: url("/PaintSwatches_1400x900.jpg");*/
-        /*font-family: 'textbook', arial, sans-serif;*/
-        /*margin-left: auto;
+    /*background-image: url("/PaintSwatches_1400x900.jpg");*/
+    /*font-family: 'textbook', arial, sans-serif;*/
+    /*margin-left: auto;
         margin-right: auto;*/
-        /*max-width: 2000px;*/
-    }
-    body {
-        background-color: #FFFAFA !important;
-        background-color: #FAFAFA !important;
-    }
+    /*max-width: 2000px;*/
+  }
+
+  body {
+    background-color: #FFFAFA !important;
+    background-color: #FAFAFA !important;
+  }
 
 
-   .section {
-      padding-top: 20px;
-      padding-bottom: 20px;
-    }
+  .section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
 
-   .title {
-      color: #000000;
-      font-family: 'Roboto Condensed', sans-serif;
-      padding-top: 10px;
-      padding-bottom: 25px;
-      font-size: 36pt;
-      line-height: 100%;
-      font-weight: 700;
-      color: #444;
-    }
-    
-    .author {
-      font-size: 13pt;
-    }
+  .title {
+    color: #000000;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-size: 36pt;
+    line-height: 100%;
+    font-weight: 700;
+    color: #444;
+  }
 
-    .section_title {
-      color: #000000;
-      font-family: 'Roboto Condensed', sans-serif;
-      /*padding-top: 10px;*/
-      /*padding-bottom: 10px;*/
-      font-size: 24pt;
-      line-height: 100%;
-      font-weight: 700;
-      padding-bottom: 10px;
-      color: #444;
-      /*margin-left: auto;
+  .author {
+    font-size: 13pt;
+  }
+
+  .section_title {
+    color: #000000;
+    font-family: 'Roboto Condensed', sans-serif;
+    /*padding-top: 10px;*/
+    /*padding-bottom: 10px;*/
+    font-size: 24pt;
+    line-height: 100%;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: #444;
+    /*margin-left: auto;
         margin-right: auto;
       /*line-height: 100%;*/
-      /*font-weight: 700;*/
-    }
-    
+    /*font-weight: 700;*/
+  }
+
   .shadow {
-      -webkit-box-shadow: 5px 5px 5px #aaa;
-      -moz-box-shadow: 5px 5px 5px #aaa;
-      box-shadow: 5px 5px 5px #aaa;
-      margin-bottom: 10px;
+    -webkit-box-shadow: 5px 5px 5px #aaa;
+    -moz-box-shadow: 5px 5px 5px #aaa;
+    box-shadow: 5px 5px 5px #aaa;
+    margin-bottom: 10px;
   }
 
   .aff {
-      margin-bottom: 16px;
-      /*max-width: 40px;*/
-      max-height: 30px
+    margin-bottom: 16px;
+    /*max-width: 40px;*/
+    max-height: 30px
   }
 
 
 
-    .img_authors {
-      position: relative;
-      max-width: 130px;
-      max-height: 130px
-    }
+  .img_authors {
+    position: relative;
+    max-width: 130px;
+    max-height: 130px
+  }
 
-    .img_links {
-      position: relative;
-      max-width: 70px;
-      max-height: 70px
-    }
+  .img_links {
+    position: relative;
+    max-width: 70px;
+    max-height: 70px
+  }
 
 
-.text {
-    position:relative;
-    line-height:2em;
-    overflow:hidden;
-}
-.fadingEffect {
-    position:absolute;
-    top:0; bottom:0; right:0;
-    width:100%;
-    background:#FFFAFA;
-    -moz-animation: showHide 5s ease-in alternate infinite; /* Firefox */
-    -webkit-animation: showHide 5s ease-in alternate infinite; /* Safari and Chrome */
-    -ms-animation: showHide 5s ease-in alternate infinite; /* IE10 */
-    -o-animation: showHide 5s ease-in alternate infinite; /* Opera */
+  .text {
+    position: relative;
+    line-height: 2em;
+    overflow: hidden;
+  }
+
+  .fadingEffect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background: #FFFAFA;
+    -moz-animation: showHide 5s ease-in alternate infinite;
+    /* Firefox */
+    -webkit-animation: showHide 5s ease-in alternate infinite;
+    /* Safari and Chrome */
+    -ms-animation: showHide 5s ease-in alternate infinite;
+    /* IE10 */
+    -o-animation: showHide 5s ease-in alternate infinite;
+    /* Opera */
     animation: showHide 5s ease-in alternate infinite;
-}
-@-webkit-keyframes showHide { /* Chrome, Safari */
-    0% {width:100%}
-    40% {width:0%}
-    60% {width:0%;}
-    100% {width:100%;}
-}
-@-moz-keyframes showHide { /* FF */
-    0% {width:100%}
-    40% {width:0%}
-    60% {width:0%;}
-    100% {width:100%;}
-}
-@-ms-keyframes showHide { /* IE10 */
-    0% {width:100%}
-    40% {width:0%}
-    60% {width:0%;}
-    100% {width:100%;}
-}
-@-o-keyframes showHide { /* Opera */
-    0% {width:100%}
-    40% {width:0%}
-    60% {width:0%;}
-    100% {width:100%;}
-}
-@keyframes showHide {
-    0% {width:100%}
-    40% {width:0%}
-    60% {width:0%;}
-    100% {width:100%;}
-}
-
-
-#cf {
-  position:relative;
-  max-height:301px;
-  /*width:450px;*/
-
-  width:100%;
-  height:100%;
-  /*overflow:hidden; */
-  /*width:inherit;*/
-
-  /*max-height: auto;*/
-
-  /*margin:0 auto;*/
-}
-
-#cf img {
-  position:absolute;
-  
-  /*height:100%;*/
-  /*width:100%;*/
-
-  opacity: 0;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-  animation-name: cfFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 28s;  /* 7*4 */
-}
-
-
-@keyframes cfFadeInOut {
-  /* fade out */
-  0% {
-    opacity:0;
   }
-  5% {
-    opacity:1;
-  }
-  /* fade in */
-  14.28% {
-    opacity:1;
-  }
-  19.28% {
-    opacity:0;
-  }
-}
 
-#cf img:nth-of-type(7) {
-  animation-delay: 24s;
-}
-#cf img:nth-of-type(6) {
-  animation-delay: 20s;
-}
-#cf img:nth-of-type(5) {
-  animation-delay: 16s;
-}
-#cf img:nth-of-type(4) {
-  animation-delay: 12s;
-}
-#cf img:nth-of-type(3) {
-  animation-delay: 8s;
-}
-#cf img:nth-of-type(2) {
-  animation-delay: 4s;
-}
-#cf img:nth-of-type(1) {
-  animation-delay: 0s;
-}
+  @-webkit-keyframes showHide {
 
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none !important;
+    /* Chrome, Safari */
+    0% {
+      width: 100%
+    }
+
+    40% {
+      width: 0%
+    }
+
+    60% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  @-moz-keyframes showHide {
+
+    /* FF */
+    0% {
+      width: 100%
+    }
+
+    40% {
+      width: 0%
+    }
+
+    60% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  @-ms-keyframes showHide {
+
+    /* IE10 */
+    0% {
+      width: 100%
+    }
+
+    40% {
+      width: 0%
+    }
+
+    60% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  @-o-keyframes showHide {
+
+    /* Opera */
+    0% {
+      width: 100%
+    }
+
+    40% {
+      width: 0%
+    }
+
+    60% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+  @keyframes showHide {
+    0% {
+      width: 100%
+    }
+
+    40% {
+      width: 0%
+    }
+
+    60% {
+      width: 0%;
+    }
+
+    100% {
+      width: 100%;
+    }
+  }
+
+
+  #cf {
+    position: relative;
+    max-height: 301px;
+    /*width:450px;*/
+
+    width: 100%;
+    height: 100%;
+    /*overflow:hidden; */
+    /*width:inherit;*/
+
+    /*max-height: auto;*/
+
+    /*margin:0 auto;*/
+  }
+
+  #cf img {
+    position: absolute;
+
+    /*height:100%;*/
+    /*width:100%;*/
+
+    opacity: 0;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    animation-name: cfFadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 28s;
+    /* 7*4 */
+  }
+
+
+  @keyframes cfFadeInOut {
+
+    /* fade out */
+    0% {
+      opacity: 0;
+    }
+
+    5% {
+      opacity: 1;
+    }
+
+    /* fade in */
+    14.28% {
+      opacity: 1;
+    }
+
+    19.28% {
+      opacity: 0;
+    }
+  }
+
+  #cf img:nth-of-type(7) {
+    animation-delay: 24s;
+  }
+
+  #cf img:nth-of-type(6) {
+    animation-delay: 20s;
+  }
+
+  #cf img:nth-of-type(5) {
+    animation-delay: 16s;
+  }
+
+  #cf img:nth-of-type(4) {
+    animation-delay: 12s;
+  }
+
+  #cf img:nth-of-type(3) {
+    animation-delay: 8s;
+  }
+
+  #cf img:nth-of-type(2) {
+    animation-delay: 4s;
+  }
+
+  #cf img:nth-of-type(1) {
+    animation-delay: 0s;
+  }
+
+  .row-centered {
+    text-align: center;
+  }
+
+  .col-centered {
+    display: inline-block;
+    float: none !important;
     /* reset the text-align */
-    text-align:center;
+    text-align: center;
     /* inline-block space fix */
-    margin-right:-4px;
+    margin-right: -4px;
     min-width: 170px;
-}
+  }
 
-html, body {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
-  height: 100%;             /* need for iframe height 100% to work */
-}
+  html,
+  body {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+    /* need for iframe height 100% to work */
+  }
 
-iframe {
-  box-sizing: border-box;   /* make the border size be included in the height */
-  /*display: block;            make them block to fix white space margin */
-  width: 100%;
-}
+  iframe {
+    box-sizing: border-box;
+    /* make the border size be included in the height */
+    /*display: block;            make them block to fix white space margin */
+    width: 100%;
+  }
 
-.hint {
-  color: #A00;
-  font-size: 10pt;
-  margin-bottom: 10px;
-}
+  .hint {
+    color: #A00;
+    font-size: 10pt;
+    margin-bottom: 10px;
+  }
 
-.img-process {
-  /*width: 100%;*/
-  margin: 5px;
-  max-height: 200px; 
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -ms-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
-  opacity: 1;
-}
-.img-process:hover{
-  cursor: pointer;
-  opacity: 0.6;
-}
+  .img-process {
+    /*width: 100%;*/
+    margin: 5px;
+    max-height: 200px;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 1;
+  }
 
-.centeredd {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
+  .img-process:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
 
+  .centeredd {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 </style>
 
 <!doctype html>
 <html lang="en">
-  <head>
-      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Neural Point-Based Graphics</title>
-      <meta property="og:image" content="http://dmitryulyanov.github.io/assets/neural-point-pased-rendering/Shoe_nearest_gt.jpg"/>
-      <meta property="og:title" content="Neural Point-Based Graphics" />
 
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Neural Point-Based Graphics</title>
+  <meta property="og:image"
+    content="http://dmitryulyanov.github.io/assets/neural-point-pased-rendering/Shoe_nearest_gt.jpg" />
+  <meta property="og:title" content="Neural Point-Based Graphics" />
 
-      <!-- Optional theme -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><!-- <link rel="stylesheet" href="../css/bootstrap-theme.min.css"> -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-      <!-- Google fonts -->
-      <!-- <link href="../css/google-fonts.css" rel="stylesheet" type="text/css"> -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300italic,400italic,600italic,400,700,300,600" rel="stylesheet" type="text/css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="../css/bootstrap-theme.min.css"> -->
 
-      <!-- Photoswipe -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css" rel="stylesheet">
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <!-- <link href="../css/google-fonts.css" rel="stylesheet" type="text/css"> -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans:300italic,400italic,600italic,400,700,300,600"
+    rel="stylesheet" type="text/css">
 
-      <script type="text/x-mathjax-config">
+  <!-- Photoswipe -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.css" rel="stylesheet">
+
+  <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
         TeX: { equationNumbers: { autoNumber: "AMS" } },
       });
       </script>
 
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
   <script>
-  function resizeIframe(obj) {
-    obj.style.height = 0;
-    obj.style.height = (obj.contentWindow.document.body.scrollHeight + 5) + 'px';
-  }
+    function resizeIframe(obj) {
+      obj.style.height = 0;
+      obj.style.height = (obj.contentWindow.document.body.scrollHeight + 5) + 'px';
+    }
 
 
 
 
-  
-</script>
-    <script language="JavaScript">
 
-      function resize_iframe()
-      {
-        obj = document.getElementById("myiframe")
+  </script>
+  <script language="JavaScript">
 
-        obj.style.height = 0;
-        obj.style.height = (obj.contentWindow.document.body.scrollHeight) + 'px';
-        
-        // document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
-      }
-      // window.onresize=resize_iframe; 
-      
+    function resize_iframe() {
+      obj = document.getElementById("myiframe")
 
-    </script>
+      obj.style.height = 0;
+      obj.style.height = (obj.contentWindow.document.body.scrollHeight) + 'px';
 
-  </head>
+      // document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
+    }
+      // window.onresize=resize_iframe;
 
-  <body>
-    <script src="zepto.min.js"></script>
+
+  </script>
+
+</head>
+
+<body>
+  <script src="zepto.min.js"></script>
   <script>
-    window.addEventListener('message', function(event) {
-      if(height = event.data['height']) {
+    window.addEventListener('message', function (event) {
+      if (height = event.data['height']) {
         $('iframe').css('height', height + 'px')
       }
     });
-    
+
 
     // var resizeEvent = new Event('resize');
     // window.dispatchEvent(resizeEvent);
-    
+
   </script>
   <div class="container">
 
@@ -361,50 +461,51 @@ iframe {
     <!-- ===================== TITLE ========================== -->
     <!-- ====================================================== -->
     <center>
-          <div class="title">Neural Point-Based Graphics</div>
+      <div class="title">Neural Point-Based Graphics</div>
     </center>
-   
 
- <center>
+
+    <center>
       <div class="row row-eq-height" style="margin-bottom: -10px">
         <!-- <div class="col-sm-12"> -->
         <div class="col-sm-8 col-sm-offset-2">
-          
+
           <div class="col-sm-4" style="margin-bottom: 10px">
             <!-- <div class="col-sm-12"> -->
-              <a href="https://github.com/duburlan">
-                  <img src="https://avatars0.githubusercontent.com/u/4682236?s=400&v=4" class="shadow img_authors img-circle img-responsive">
-                  <div class="author"><span style="font-weight: 600">Kara-Ali Aliev</span><br>Samsung AI</div>
-              </a>
+            <a href="https://github.com/duburlan">
+              <img src="https://avatars0.githubusercontent.com/u/4682236?s=400&v=4"
+                class="shadow img_authors img-circle img-responsive">
+              <div class="author"><span style="font-weight: 600">Kara-Ali Aliev</span><br>Samsung AI</div>
+            </a>
             <!-- </div> -->
           </div>
           <div class="col-sm-4" style="margin-bottom: 10px">
             <!-- <div class="col-sm-12"> -->
-              <a href="https://dmitryulyanov.github.io/about">
-                  <img src="/assets/projects/dmitry_ulyanov.jpg" class="shadow img_authors img-circle img-responsive">
-                  <div class="author"><span style="font-weight: 600">Dmitry Ulyanov</span><br>Samsung AI, Skoltech</div>
-              </a>
+            <a href="https://dmitryulyanov.github.io/about">
+              <img src="/assets/projects/dmitry_ulyanov.jpg" class="shadow img_authors img-circle img-responsive">
+              <div class="author"><span style="font-weight: 600">Dmitry Ulyanov</span><br>Samsung AI, Skoltech</div>
+            </a>
             <!-- </div> -->
           </div>
           <div class="col-sm-4" style="margin-bottom: 10px">
             <!-- <div class="col-sm-12"> -->
-              <a href="http://sites.skoltech.ru/compvision/members/vilem/">
-                  <img src="/assets/projects/victor_lempitsky.jpg" class="shadow img_authors img-circle img-responsive">
-                  <div class="author"><span style="font-weight: 600">Victor Lempitsky</span><br>Samsung AI, Skoltech</div>
-              </a>
+            <a href="http://sites.skoltech.ru/compvision/members/vilem/">
+              <img src="/assets/projects/victor_lempitsky.jpg" class="shadow img_authors img-circle img-responsive">
+              <div class="author"><span style="font-weight: 600">Victor Lempitsky</span><br>Samsung AI, Skoltech</div>
+            </a>
             <!-- </div> -->
           </div>
 
         </div>
-      <!-- </div> -->
-    </div>
+        <!-- </div> -->
+      </div>
     </center>
 
 
-  <!-- ====================================================== -->
-  <!-- ===================== TEASER ============== -->
-  <!-- ====================================================== -->
-<!-- 
+    <!-- ====================================================== -->
+    <!-- ===================== TEASER ============== -->
+    <!-- ====================================================== -->
+    <!-- 
     <br>
   <center>
     <div class="row section center row-eq-height">
@@ -436,46 +537,58 @@ iframe {
     <div class="row section">
       <!-- <div class="col-xs-8 col-xs-offset-2 text-justify"> -->
       <div class="section_title">Abstract</div>
-        We present a new point-based approach for modeling complex scenes. The
-approach uses a raw point cloud as the geometric representation of a scene,
-and augments each point with a learnable neural descriptor that encodes local
-geometry and appearance. A deep rendering network is learned in parallel
-with the descriptors, so that new views of the scene can be obtained by
-passing the rasterizations of a point cloud from new viewpoints through this
-network. The input rasterizations use the learned descriptors as point pseudocolors. We show that the proposed approach can be used for modeling
-complex scenes and obtaining their photorealistic views, while avoiding
-explicit surface estimation and meshing. In particular, compelling results
-are obtained for scene scanned using hand-held commodity RGB-D sensors as well as standard RGB cameras even in the presence of objects that are
-challenging for standard mesh-based modeling. 
+      We present a new point-based approach for modeling complex scenes. The
+      approach uses a raw point cloud as the geometric representation of a scene,
+      and augments each point with a learnable neural descriptor that encodes local
+      geometry and appearance. A deep rendering network is learned in parallel
+      with the descriptors, so that new views of the scene can be obtained by
+      passing the rasterizations of a point cloud from new viewpoints through this
+      network. The input rasterizations use the learned descriptors as point pseudocolors. We show that the proposed
+      approach can be used for modeling
+      complex scenes and obtaining their photorealistic views, while avoiding
+      explicit surface estimation and meshing. In particular, compelling results
+      are obtained for scene scanned using hand-held commodity RGB-D sensors as well as standard RGB cameras even in the
+      presence of objects that are
+      challenging for standard mesh-based modeling.
     </div>
-    
+
 
 
     <!-- ====================================================== -->
     <!-- ===================== LINKS ========================== -->
     <!-- ====================================================== -->
     <center>
-    <div class="row section" style="margin-bottom: -12px">
-      <div class="col-sm-10 col-sm-offset-1">
-      <!-- <div class="col-sm-12 center"> -->
-        <div class="col-sm-12" style="margin-bottom: 12px">
-          <!-- <div class="col-sm-12"> -->
+      <div class="row section" style="margin-bottom: -12px">
+        <div class="col-sm-12 col-sm-offset-3">
+          <!-- <div class="col-sm-12 center"> -->
+          <div class="col-sm-3" style="margin-bottom: 12px">
+            <!-- <div class="col-sm-12"> -->
             <a href="https://arxiv.org/pdf/1906.08240.pdf">
-                <img src="/assets/projects/pdf.svg" class="img_links img-responsive">
-                <div class="author">Paper</div>
+              <img src="/assets/projects/pdf.svg" class="img_links img-responsive">
+              <div class="author">Paper</div>
             </a>
-          <!-- </div> -->
-        </div>
-       <!--  <div class="col-sm-3" style="margin-bottom: 12px">
+            <!-- </div> -->
+          </div>
+          <div class="col-sm-3" style="margin-bottom: 12px">
+            <!-- <div class="col-sm-12"> -->
+            <a href="https://github.com/alievk/npbg_public">
+              <img src="/assets/projects/github.svg" class="img_links img-responsive">
+              <div class="author">Data</div>
+            </a>
+            <!-- </div> -->
+          </div>
+
+
+          <!-- <div class="col-sm-3" style="margin-bottom: 12px">
             <a href="" >
                 <img src="/assets/projects/github.svg" class="img_links img-responsive">
                 <div class="author">Video</div>
             </a>
         </div> -->
-      <!-- </div> -->
-    </div>
-  </div>
-  </center>
+          <!-- </div> -->
+        </div>
+      </div>
+    </center>
 
 
     <!-- ====================================================== -->
@@ -485,29 +598,41 @@ challenging for standard mesh-based modeling.
       <!-- <div class="col-xs-8 col-xs-offset-2 text-justify"> -->
       <div class="section_title">Main idea</div>
       <p>
-        Having a set of RGB(D) images we first reconstruct a rough pointcloud of the scene using the classic Structure From Motion (SfM) and Multiview Stereo (MVS) algorithms. 
+        Having a set of RGB(D) images we first reconstruct a rough pointcloud of the scene using the classic Structure
+        From Motion (SfM) and Multiview Stereo (MVS) algorithms.
       </p>
-With every point in the pointcloud we associate a small learnable N-dimensional descriptor (similar to 3-dimensional color descriptor, that every point already has). We then project the descriptors to virtual cameras, estimated by SfM (similarly to how the colored pointcloud is projected to a camera) and feed those projections to a ConvNet, which is then learned to render the scene from the corresponding view. We learn the ConvNet jointly with the descriptors to minimize the discrepancy between the predicted rendering and actual image captured by a real camera. 
-</p>
-<p>
-At train time we learn the mentioned ConvNet on multiple scenes to make it universal. At test time, for an unseen set of RGB(D) images we repeat the training pipeline, except we fix the ConvNet and only optimize the descriptors of the points. Having both descriptors and the network trained we can render the scene from an arbitrary standpoint.
-</p>
-<p>
-Our method successfully generalizes to novel views and enables a very photo-realistic real-time rendering of complex scenes.
-</p>
+      With every point in the pointcloud we associate a small learnable N-dimensional descriptor (similar to
+      3-dimensional color descriptor, that every point already has). We then project the descriptors to virtual cameras,
+      estimated by SfM (similarly to how the colored pointcloud is projected to a camera) and feed those projections to
+      a ConvNet, which is then learned to render the scene from the corresponding view. We learn the ConvNet jointly
+      with the descriptors to minimize the discrepancy between the predicted rendering and actual image captured by a
+      real camera.
+      </p>
+      <p>
+        At train time we learn the mentioned ConvNet on multiple scenes to make it universal. At test time, for an
+        unseen set of RGB(D) images we repeat the training pipeline, except we fix the ConvNet and only optimize the
+        descriptors of the points. Having both descriptors and the network trained we can render the scene from an
+        arbitrary standpoint.
+      </p>
+      <p>
+        Our method successfully generalizes to novel views and enables a very photo-realistic real-time rendering of
+        complex scenes.
+      </p>
       <!-- </div> -->
     </div>
 
-     
+
     <div class="row section">
       <div class="section_title">Results</div>
     </div>
-  
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/7s3BYGok7wU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <iframe  id="myiframe" src="image_compare_point_based.html" scrolling="no" style="border-width: 0px;width: 100%;margin: 0;padding: 0" ></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7s3BYGok7wU" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  
+    <iframe id="myiframe" src="image_compare_point_based.html" scrolling="no"
+      style="border-width: 0px;width: 100%;margin: 0;padding: 0"></iframe>
+
+
 
 
 
@@ -515,74 +640,83 @@ Our method successfully generalizes to novel views and enables a very photo-real
     <!-- ====================================================== -->
     <!-- ============== Acknowledge =========================== -->
     <!-- ====================================================== -->
-    
 
-  
+
+
     <div class="row section">
       <div class="section_title">Acknowledgements</div>
-      The authors acknowledge the usage of the Skoltech CDISE HPC cluster ZHORES for obtaining the results presented in this paper. 
+      The authors acknowledge the usage of the Skoltech CDISE HPC cluster ZHORES for obtaining the results presented in
+      this paper.
     </div>
 
 
   </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
 
 
-    <script type="text/javascript">
+  <script type="text/javascript">
 
-      function change_height_cf(el) {
-        if (el.height > 0) {
-               document.getElementById("cf").style.height = el.height + 8;
-        };
+    function change_height_cf(el) {
+      if (el.height > 0) {
+        document.getElementById("cf").style.height = el.height + 8;
       };
-      
-
-       $(document).ready(function(){
-            // $('#firstimage').on('load', function(){
-            //    console.log(2);
-            //     change_height_cf(document.getElementById("firstimage"));
-            // });
-
-            // if ($('#firstimage')[0].complete) {
-            //   console.log(3);
-            //   change_height_cf(document.getElementById("firstimage"));
-            // };
-
-            // $('#lastimage').on('load', function(){
-            //   console.log(2);
-            //   change_height_cf(document.getElementById("lastimage"));
-            // });
-            // if ($('#lastimage')[0].complete) {
-            //   console.log(3);
-            //   change_height_cf(document.getElementById("lastimage"));
-            // };
-
-          });
-      
-    </script>
-    
-
-   <!-- photoswipe -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script> -->
+    };
 
 
+    $(document).ready(function () {
+      // $('#firstimage').on('load', function(){
+      //    console.log(2);
+      //     change_height_cf(document.getElementById("firstimage"));
+      // });
 
-    <!-- <script src="img-gallery.js"></script> -->
-    <!-- Google Analytics -->
-<!--     <script type="text/javascript">
+      // if ($('#firstimage')[0].complete) {
+      //   console.log(3);
+      //   change_height_cf(document.getElementById("firstimage"));
+      // };
+
+      // $('#lastimage').on('load', function(){
+      //   console.log(2);
+      //   change_height_cf(document.getElementById("lastimage"));
+      // });
+      // if ($('#lastimage')[0].complete) {
+      //   console.log(3);
+      //   change_height_cf(document.getElementById("lastimage"));
+      // };
+
+    });
+
+  </script>
+
+
+  <!-- photoswipe -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script> -->
+
+
+
+  <!-- <script src="img-gallery.js"></script> -->
+  <!-- Google Analytics -->
+  <!--     <script type="text/javascript">
       document.getElementById("cf").style.height = document.getElementById("lastimage").height + 8;
     </script> -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', '{{ site.google_analytics }}', 'auto');
     ga('send', 'pageview', {
@@ -591,35 +725,37 @@ Our method successfully generalizes to novel views and enables a very photo-real
     });
   </script>
   <!-- End Google Analytics -->
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (d, w, c) {
-          (w[c] = w[c] || []).push(function() {
-              try {
-                  w.yaCounter41551219 = new Ya.Metrika({
-                      id:41551219,
-                      clickmap:true,
-                      trackLinks:true,
-                      accurateTrackBounce:true,
-                      webvisor:true
-                  });
-              } catch(e) { }
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter41551219 = new Ya.Metrika({
+            id: 41551219,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
           });
+        } catch (e) { }
+      });
 
-          var n = d.getElementsByTagName("script")[0],
-              s = d.createElement("script"),
-              f = function () { n.parentNode.insertBefore(s, n); };
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://mc.yandex.ru/metrika/watch.js";
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-          if (w.opera == "[object Opera]") {
-              d.addEventListener("DOMContentLoaded", f, false);
-          } else { f(); }
-      })(document, window, "yandex_metrika_callbacks");
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
   </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/41551219" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/41551219" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
 
 </body>
+
 </html>
- 
