@@ -6,9 +6,12 @@ title: About
 does_not_need_title: true
 ---
 <h1 style="margin:0px; font-size: 36px">About</h1>
-- I am a PhD student at [Skoltech](http://www.skoltech.ru/en/) in [computer vision group](http://sites.skoltech.ru/compvision/). My supervisors are [Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/).
 
-- Prize winner in about 10 various data science contests (see [CV](https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing)). I run [class](https://www.coursera.org/learn/competitive-data-science) about *competitive data science* on Coursera.
+- Currently, I am CEO and co-founder of [in3D](in3d.io) where we create an app for 3D body scanning. Previously, I worked at Samsung Research, Yandex, Google.
+
+- I received PhD degree in CV at [Skoltech](http://www.skoltech.ru/en/). It was an honor to be supervised by [Prof. Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Prof. Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/).
+
+- Prize winner in about 10 various data science contests (see [resume](https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing)). I run [class](https://www.coursera.org/learn/competitive-data-science) about *competitive data science* on Coursera.
 
 <br/>
 <div class="scaleIcons">
