@@ -7,7 +7,7 @@ does_not_need_title: true
 ---
 <h1 style="margin:0px; font-size: 36px">About</h1>
 
-- Currently, I am CEO and co-founder of [in3D](https://in3d.io) where we create an SDK for 3D body scanning with a smartphone. Previously, I worked at Samsung AI, Yandex Research, Google. Together with colleagues, I published more than 10 papers at major venues such as CVPR, ICML, ECCV, AAAI.  
+- I am CEO and co-founder of [in3D](https://in3d.io) where we create an SDK for 3D body scanning with a smartphone. Previously, I worked at Samsung AI, Yandex Research, Google. Together with colleagues, I published more than 10 papers at major venues such as CVPR, ICML, ECCV, AAAI.  
 
 - I received PhD degree in computer vision at [Skoltech](http://www.skoltech.ru/en/). It was an honor to be supervised by [Prof. Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Prof. Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/).
 
