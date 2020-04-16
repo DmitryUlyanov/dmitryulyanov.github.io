@@ -9,6 +9,8 @@ does_not_need_title: true
 
 - I am CEO and co-founder of [in3D](https://in3d.io) where we create an SDK for 3D body scanning with a smartphone. Previously, I worked at Samsung AI, Yandex Research, Google. Together with colleagues, I published more than 10 papers at major venues such as CVPR, ICML, ECCV, AAAI.  
 
+- Creator of [co-train.space](https://co-train.space)
+
 - I received PhD degree in computer vision at [Skoltech](http://www.skoltech.ru/en/). It was an honor to be supervised by [Prof. Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Prof. Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/).
 
 - I am a prize winner in 10 various data science contests (see [resume](https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing)). I have created a [course](https://www.coursera.org/learn/competitive-data-science) about *competitive data science* on Coursera.
