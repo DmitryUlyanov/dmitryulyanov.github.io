@@ -37,9 +37,27 @@ does_not_need_title: true
         <img class="img-responsive pub-image" src="/assets/about/point_based.jpg" alt=""/>
     </div>
     <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
+        <p class="title">Self-supervised Depth Denoising Using Lower- and Higher-quality RGB-D sensors</p>
+        <p class="authors">A Shabanov, I Krotov, N Chinaev, V Poletaev, S Kozlukov, I Pasechnik, B Yakupov, A Sanakoyeu, V Lebedev, D Ulyanov</p>
+        <p class="conf">3DV 2020</p>
+        <p class="description">
+            We propose a pipeline for learning to denoise depth images. We collect a dataset using a pair of sensors and train a deep model to perform the denoising. The data collection is straighforward and does not require any hardware syncronization and complex calibration.
+        </p>
+        <div class="links">
+            <a href="https://arxiv.org/pdf/2009.04776.pdf">Paper</a>
+            <a href="https://ahanio.github.io/lq2hq/" style="font-weight: bold;">Project page</a>
+            <a href="https://www.youtube.com/watch?v=HD6VdwO9s70" style="font-weight: bold;">Demo video</a>
+        </div>
+    </div>
+</div>
+<div class="row publications border">
+    <div class="col-sm-5 vcenter marginbottom">
+        <img class="img-responsive pub-image" src="/assets/about/point_based.jpg" alt=""/>
+    </div>
+    <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Neural Point-Based Graphics</p>
         <p class="authors">Kara-Ali Aliev, Dmitry Ulyanov, Victor Lempitsky</p>
-        <p class="conf">arXiv 2019</p>
+        <p class="conf">ECCV 2020</p>
         <p class="description">
             We propose a neural-based photo-realistic rendering pipeline that builds upon pointclouds. To render an image we project descriptors of the pointcloud to camera and apply a ConvNet to get an RGB image. Descriptors and the ConvNet are leared on real videos thus the rendering is realistic.  
         </p>
