@@ -9,6 +9,8 @@ does_not_need_title: true
 
 - I am CEO and co-founder of [in3D](https://in3d.io) where we create an SDK for 3D body scanning with a smartphone. Previously, I worked at Samsung AI, Yandex Research, Google. Together with colleagues, I published more than 10 papers at major venues such as CVPR, ICML, ECCV, AAAI.  
 
+- Creator of [co-train.space](https://co-train.space)
+
 - I received PhD degree in computer vision at [Skoltech](http://www.skoltech.ru/en/). It was an honor to be supervised by [Prof. Victor Lempitsky](http://sites.skoltech.ru/compvision/members/vilem/) and [Prof. Andrea Vedaldi](http://www.robots.ox.ac.uk/~vedaldi/).
 
 - I am a prize winner in 10 various data science contests (see [resume](https://docs.google.com/document/d/1eRQ41fevLl9o95lJbF19ldk5SzooeX1jp-Bxx8gA9m0/edit?usp=sharing)). I have created a [course](https://www.coursera.org/learn/competitive-data-science) about *competitive data science* on Coursera.
@@ -56,15 +58,15 @@ does_not_need_title: true
     </div>
     <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Neural Point-Based Graphics</p>
-        <p class="authors">Kara-Ali Aliev, Dmitry Ulyanov, Victor Lempitsky</p>
+        <p class="authors">Kara-Ali Aliev, Artem Sevastopolsky, Maria Kolos, Dmitry Ulyanov, Victor Lempitsky</p>
         <p class="conf">ECCV 2020</p>
         <p class="description">
             We propose a neural-based photo-realistic rendering pipeline that builds upon pointclouds. To render an image we project descriptors of the pointcloud to camera and apply a ConvNet to get an RGB image. Descriptors and the ConvNet are leared on real videos thus the rendering is realistic.  
         </p>
         <div class="links">
             <a href="https://arxiv.org/pdf/1906.08240.pdf">Paper</a>
-            <a href="https://dmitryulyanov.github.io/neural_point_based_graphics" style="font-weight: bold;">Project page</a>
-            <a href="https://www.youtube.com/watch?v=7s3BYGok7wU" style="font-weight: bold;">Demo video</a>
+            <a href="https://saic-violet.github.io/npbg/" style="font-weight: bold;">Project page</a>
+            <a href="https://youtu.be/2uIe4iD4gSY" style="font-weight: bold;">Demo video</a>
         </div>
     </div>
 </div>
