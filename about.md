@@ -36,7 +36,7 @@ does_not_need_title: true
 <!-- <> -->
 <div class="row publications">
     <div class="col-sm-5 vcenter marginbottom">
-        <img class="img-responsive pub-image" src="/assets/about/point_based.jpg" alt=""/>
+        <img class="img-responsive pub-image" src="/assets/about/3dv.png" alt=""/>
     </div>
     <div class="col-sm-7 vcenter" style="margin-right: -4px; text-align: justify;">
         <p class="title">Self-supervised Depth Denoising Using Lower- and Higher-quality RGB-D sensors</p>
